@@ -13,7 +13,7 @@ function register(event) {
    localStorage.setItem("temporaryUser", JSON.stringify(tempUser));
 
     // Move to the password page
-    window.location.href = "/Password.html";
+    window.location.href = "../Password.html";
 };
 
 
