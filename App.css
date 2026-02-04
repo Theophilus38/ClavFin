@@ -11,12 +11,12 @@ body {
   align-items: center;
   background-color: black;
   font-family: sans-serif;
-  font-size: 2rem;
-  font-weight: bold;
 }
 
 #logo {
   color: green;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 @keyframes glow {
