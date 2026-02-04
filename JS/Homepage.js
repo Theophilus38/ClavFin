@@ -101,40 +101,94 @@ if (activeUserPic && activeUserPic.profilePicture) {
 }
 
 
-
 const container = document.getElementById('cycle-box');
-const boxes = container.querySelectorAll('.box');
-const dots = container.querySelectorAll('.dot');
-let currentIndex = 0; // creating a counter, starting at te index of 0 which is the first box
-let timer = null; // timer is falsy, no set interval yet, meaning no time running
+    const track = container.querySelector('.slide-track');
+    const boxes = container.querySelectorAll('.box');
+    const dots = container.querySelectorAll('.dot');
+    const prevBtn = container.querySelector('.arrow.prev');
+    const nextBtn = container.querySelector('.arrow.next');
 
-function updateDisplay() {
-  // Remove active class from previous box and dot
-  boxes.forEach(box => box.classList.remove('active'));
-  dots.forEach(dot => dot.classList.remove('active'));
+    let currentIndex = 0;
+    let timer = null;
 
-  // Add active class to current box and dot
-  boxes[currentIndex].classList.add('active'); // looks at the counter and adds active class, defined in css, to the box with the current index
-  dots[currentIndex].classList.add('active'); // do same for dot
-}
+    // The Main Display Function 
+    function updateDisplay() {
+        // Move the track to the left based on the current index
+        // 0 = 0%, 1 = -100%, 2 = -200%
+        track.style.transform = `translateX(-${currentIndex * 100}%)`; // this means if current index is 0, it will translate x(0%). if current index is 1, translate x(-100%). This means that the current box will move left, whenever it translates x, by 100%, making it disappear totally from the screen
 
-function play() {
-  if (timer) return; // if timer is running, stop and do nothing
-  timer = setInterval(() => {
-    currentIndex = (currentIndex + 1) % boxes.length; // this maths works like this since there are 3 boxes, it adds i to the current index (0 + 1) % 3 =1, (1 + 1) % 3 =2, (2 + 1) % 3 = 0, now it resets back to 0
-    updateDisplay(); // run the updateDisplay function
-  }, 2500); // it doesvthis maths to make each box appear ever 2.5seconds
-}
+        // Update Dots
+        dots.forEach(dot => dot.classList.remove('active')); /// removes active, as defined in app.css from all dots
+        dots[currentIndex].classList.add('active'); // add active to the dot matching the current box(currentIndex) being displayed
+    }
 
-function pause() {
-  clearInterval(timer); // this occur when as defined below:
-  timer = null; // this emptiies the timer, so that when a user hovers again the timer starts reading all over. E.g the timer is 2.5seconds, if the user stop hovering when the timer is 1.5seconds and probably on the second box, the second box remains visible but the timer becomes 0. now, if the user hovers back again, the timer starts from 0 to 2.5seconds before moving to the third tbox
-}
+    // this is the logic that controls the currentIndex for the "next slide". This is called Carousel
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % boxes.length; // a modulo operator "%" is used here. Note that modulo operator uses remainder. since the total number of boxes(boxes.length) is 3, the total index is 0. the math here is that if the current index is 0, it will be (0 + 1) % 3 => (1 % 3), that gives 0 remainder 1, so 1 is now the current index. when 1 becomes the current index. it will be (1 + 1) % 3 => (2 % 3), and it will give 0 remainder 2, so 2 is now the current index. when 2 becomes the current index it will be (2 + 1) % 3 => 3 % 3, that gives 1 reminder 0, so 0 now becomes the current index again, so it move on like that. the flow is like this, 0,1,2,0,1,2...  
+        
+        //The above works in a way that when the number on the left e.g "1" and "2" dividing "3" above, the number on the left is usually the reminder
+        updateDisplay();
+    }
 
-// Mouse Events
-container.addEventListener('mouseenter', play); // run the play function when the mouse enters the container div
-container.addEventListener('mouseleave', pause); // run the puause function when it leaves
+    function prevSlide() {
+        // The math ensures we loop backwards correctly
+        currentIndex = (currentIndex - 1 + boxes.length) % boxes.length;
+        updateDisplay();
+    } // this function allows back, that is, to the previous slide rather than the next one has shown above. you might think what is nedded here is only (currentIndex - 1) % 3. However, JavaScript handles negative numbers differently than some other languages. If a user is on slide 0 and click "Back": 0 - 1 = -1.In JavaScript, -1 % 3 results in -1.Since there is no such thing as "Slide -1," the carousel would break and show a blank space. By adding boxes.length (which is 3) into the middle of the equation, we force the result to stay positive, even when we are moving backward from zero. 
+    //if a user is on slide 2: (2 - 1 + 3) = 4. Then 4 % 3 = 1 the slide Moves from 2 to 1 which is normal
 
-// Mobile Touch Events
-container.addEventListener('touchstart', (e) => { play(); }, { passive: true }); // this is for mobile screen. Run the play function when the user touches the container div
-container.addEventListener('touchend', pause); // run the pause fuction when he or she stops
+   //if a user is on slide 1: (1 - 1 + 3) = 3. Then 3 % 3 = 0 the slide Moves from 1 to 0 which is also normal 
+
+   //if a user is on slide 0: (0 - 1 + 3) = 2. Then 2 % 3 = 2 the slide Moves from 0 to 2 which is also normal
+
+    // (Arrows & Dots) 
+    // Helper to stop timer when user interacts
+    function resetTimer() {
+        pause();
+        play(); // Optional: restart timer immediately, or leave paused
+    }
+
+    nextBtn.addEventListener('click', () => {
+        pause(); // Stop auto-play so it doesn't fight the user
+        nextSlide();
+    });
+
+    prevBtn.addEventListener('click', () => {
+        pause();
+        prevSlide();
+    });
+
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            pause();
+            currentIndex = index;
+            updateDisplay();
+        });
+    });
+
+    // --- 4. Auto Play Logic ---
+    function play() {
+        if (timer) return;
+        timer = setInterval(nextSlide, 3000); // 3 seconds
+    }
+
+    function pause() {
+        clearInterval(timer);
+        timer = null;
+    }
+
+    // Start auto-play on load
+    play();
+
+    // Pause when mouse enters, Resume when mouse leaves
+    container.addEventListener('mouseenter', pause);
+    container.addEventListener('mouseleave', play);
+    
+    // Mobile Touch Support (Simple Swipe)
+    let touchStartX = 0;
+    container.addEventListener('touchstart', e => touchStartX = e.changedTouches[0].screenX, {passive: true});
+    container.addEventListener('touchend', e => {
+        let touchEndX = e.changedTouches[0].screenX;
+        if (touchStartX - touchEndX > 50) nextBtn.click(); // Swiped Left
+        if (touchEndX - touchStartX > 50) prevBtn.click(); // Swiped Right
+    });

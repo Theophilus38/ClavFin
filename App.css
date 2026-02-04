@@ -23,6 +23,7 @@ body {
   from {
     text-shadow: 0 0 7px green;
   }
+
   to {
     text-shadow: 0 0 20px green;
   }
@@ -435,6 +436,7 @@ body {
   flex-direction: column;
   gap: 0.5em;
 }
+
 #cardP {
   width: 75%;
   text-align: center;
@@ -990,6 +992,7 @@ body {
   display: flex;
   justify-content: center;
 }
+
 #solutions {
   width: 90%;
   display: flex;
@@ -1184,12 +1187,12 @@ body {
   display: flex;
 }
 
-#step1noteBtn p{
+#step1noteBtn p {
   font-size: 0.5rem;
   background-color: #f4f9f8;
-  text-align:center;
+  text-align: center;
   width: 100%;
-  border-radius:0.1rem ;
+  border-radius: 0.1rem;
   padding-top: 0.2rem;
   padding-bottom: 0.2rem
 }
@@ -1201,76 +1204,104 @@ body {
   font-family: sans-serif;
 }
 
-#usersComments span{
-  color: green ;
+#usersComments span {
+  color: green;
   font-family: cursive;
   font-weight: bold;
 }
 
-.container {
-  position: relative; /* this ensures internal boxes which are absolute stays inside the container, and not go over to the top of the page */
+/* The Main Container */
+#cycle-box {
+  position: relative;
   width: 90%;
-  height: 30vh;
-  background: #fff;
-  overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+  height: 40vh;
   margin: 0 auto;
+  overflow: hidden;
+  background: #f4f4f4;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* The Moving Track (The Flexbox Strip) */
+.slide-track {
+  display: flex;
+  /* Puts boxes in a row */
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+  /* Smooth wipe effect. each box ease in-out within 0.5s */
+  font-family: sans-serif;
+}
+
+/* Individual Boxes */
+.box {
+  min-width: 100%;
+  /* Each box takes up full width of container */
+  height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 5rem;
-}
-
-.box {
-  position: absolute; 
-  inset: 0; /* this stacks that boxs on top each other. it is a shorthand for top: 0, left: 0, right: 0, bottom:0. ut forces the boxes to be the same size as the container */
-  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  opacity: 0; /* this makes the boxes to be invisibe */
-  transform: scale(0.9); /* this ensures the boxes appear like they are zooming in, occuping 90% of the parent width*/
-  transition: opacity 0.8s ease, transform 0.8s ease; /* this ensures that when the opacity and transform changes from a box to another, it happens smoothly within 0.8s */
-  font-size: 0.7rem;
   text-align: center;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-weight: 500;
-  font-family: sans-serif;
-  line-height: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
 }
 
 
-
-.box.active { /* this happens when an active class is added to a box as defined in JS */
-  opacity: 1; /* that box becomes visible */
-  transform: scale(1);  /* the box grows from 90% to 100%
-  z-index: 1; /* this allows the box to be on top of the one fading out */
+/* Arrows */
+.arrow {
+  position: absolute;
+  top: 87%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 50%;
+  z-index: 10;
+  user-select: none;
 }
 
-/* Dots Styling */
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.arrow.prev {
+  left: 10px;
+}
+
+.arrow.next {
+  right: 10px;
+}
+
+/* Dots */
 .dots-container {
-  position: absolute; /* this and the bottom px makes the dots container to apper below the container */
+  position: absolute;
   bottom: 15px;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  justify-content: center;
-  gap: 8px;
+  gap: 10px;
   z-index: 10;
 }
 
 .dot {
-  width: 8px;
-  height: 8px;
-  background: rgba(0, 0, 0, 0.2); /* the dots color is originally this */
+  width: 12px;
+  height: 12px;
+  background-color: #333; /* this color for the non-active dots */
   border-radius: 50%;
-  transition: background 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .dot.active {
-  background: #3498db; /* when a dot is active, it changes the background color in 0.3s ease defined above to this */
-  transform: scale(1.2); /* when a dot is active, it grows by 20% in 0.3s ease as defined above */
+  background-color: green;
+  /* greenn color for active dot */
+  transform: scale(1.2);
 }
+
 
 #footer {
   width: 100%;
@@ -1304,8 +1335,8 @@ body {
 
 #footer2 {
   width: 50%;
-   display: flex;
-   height: 33vh;
+  display: flex;
+  height: 33vh;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -1315,7 +1346,7 @@ body {
   font-weight: bold;
 }
 
-#clavpimg{
+#clavpimg {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
