@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <link rel="stylesheet" href="App.css" />
+  </head>
+  <body>
+    <section id="settings">
+      <div id="userSet">
+        <img id="profilePicture" alt="" />
+        <input id="photoInput" type="file" accept="image/*" hidden />
+        <div id="greet">Hi,</div>
+        <div id="userName1"></div>
+      </div>
+      <div id="settingsCont">
+        <div id="changes">
+          <button id="button1"></button>
+          <a href="changepassword.html"
+            ><button id="button2">Change Password</button></a
+          >
+          <a href="signup.html"><button id="button3">Log out</button></a>
+        </div>
+
+        <div>
+            <div>
+          <button id="delete">Delete Account</button>
+          </div>
+
+          <div id="deleting">
+            <p>Are you sure you want to delete this account?</p>
+            <div id="deletingButton">
+                <button id="no">No</button>
+                <button id="yes">Yes</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="JS/Settings.js"></script>
+  </body>
+</html>

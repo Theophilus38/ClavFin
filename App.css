@@ -1,0 +1,1367 @@
+body {
+  margin: 0;
+}
+
+/* index.html */
+#welcomePage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  font-family: sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#logo {
+  color: green;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 7px green;
+  }
+  to {
+    text-shadow: 0 0 20px green;
+  }
+}
+
+#logo {
+  animation: glow 1s infinite alternate;
+}
+
+.hide {
+  display: none;
+}
+
+.showLoading {
+  display: block;
+}
+
+/* sign up page */
+#signup {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background: center/cover url(Professional\ Portrait\ of\ a\ Man\ 2.png);
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: color;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#signup form {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#signupForm input {
+  width: 80%;
+  height: 7vh;
+  margin: 0 auto;
+  border-radius: 0.2rem;
+  padding-left: 1rem;
+  font-size: 1rem;
+  color: #000;
+  border: none;
+}
+
+#signup input:focus {
+  outline: none;
+  border: 4px solid green;
+}
+
+#signupButton {
+  width: 50%;
+  height: 10vh;
+  margin: 0 auto;
+  background-color: green;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 0.4rem;
+  border: none;
+}
+
+/* sign in page */
+#signinButton {
+  background-color: green;
+  color: white;
+  padding: 0.4rem;
+  border: none;
+  border-radius: 0.1rem;
+}
+
+#signinParagraph {
+  font-size: 1rem;
+  color: white;
+}
+
+/* password page */
+#passwordCont {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background: center/cover url(Professional\ Portrait\ of\ a\ Man\ 2.png);
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: color;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#passwordCont input {
+  width: 80%;
+  height: 7vh;
+  font-size: 1rem;
+  padding-left: 1rem;
+  border-radius: 0.2rem;
+  border: none;
+}
+
+#confirm {
+  width: 70%;
+  height: 7vh;
+  font-size: 1rem;
+  background-color: green;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  border-radius: 0.3rem;
+  border: none;
+}
+
+#passwordCont input:focus {
+  outline: none;
+  border: 4px solid green;
+}
+
+/* log in page */
+
+#loginCont {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background: center/cover url(Professional\ Portrait\ of\ a\ Man\ 2.png);
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: color;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#loginCont input {
+  width: 80%;
+  height: 7vh;
+  font-size: 1rem;
+  padding-left: 1rem;
+  border-radius: 0.2rem;
+  border: none;
+}
+
+#loginButton {
+  width: 70%;
+  height: 7vh;
+  font-size: 1rem;
+  background-color: green;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  border-radius: 0.3rem;
+  border: none;
+}
+
+/* Homepage */
+#HompageSection {
+  width: 100%;
+  display: flex;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: #f6f4d2;
+}
+
+#nav {
+  width: 92%;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+#ClavFin {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+#ClavFin img {
+  width: 50%;
+  height: 3vh;
+}
+
+#pages {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  gap: 0.3rem;
+  font-size: 0.5rem;
+  align-items: center;
+}
+
+#pages a {
+  color: #000;
+  text-decoration: none;
+}
+
+#navButton {
+  background-color: black;
+  color: white;
+  border: none;
+  height: 5vh;
+  border-radius: 0.1rem;
+}
+
+#buttonCont {
+  display: flex;
+  align-items: center;
+}
+
+#HomepageNote {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#hp1 {
+  font-size: 0.3rem;
+}
+
+#hp2 {
+  font-size: 1.2rem;
+}
+
+#hp2 span {
+  color: green;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+#hp3 {
+  font-size: 0.4rem;
+  color: #6c757d;
+}
+
+#HomepageNoteButton {
+  background-color: black;
+  color: white;
+  font-size: 0.7rem;
+  padding: 0.5rem 0.8rem;
+  font-weight: bold;
+  border-radius: 0.2rem;
+  margin-top: 1rem;
+  border: none;
+}
+
+#card {
+  width: 90%;
+  display: flex;
+  margin-top: 1rem;
+  background-color: #f4f9f8;
+  height: auto;
+  font-family: sans-serif;
+  border: 2px solid #d8f3dc;
+  position: relative;
+  z-index: 1;
+  border-radius: 0.3rem;
+}
+
+#dashboard {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+}
+
+#dashboard1 {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  gap: 0.2rem;
+  background-color: white;
+  border-radius: 0.2rem;
+}
+
+#dashboard1p {
+  font-size: 0.6rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.2rem;
+  height: 7vh;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+#dashboard1p img {
+  width: 50%;
+  height: 2.5vh;
+}
+
+#pa1,
+#pa11,
+#pa111,
+#pa1111 {
+  margin-top: 0;
+}
+
+#dashboardHambuger {
+  font-size: 0.5rem;
+  color: #6c757d;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  justify-content: flex-start;
+}
+
+#dashboardHambuger a {
+  text-decoration: none;
+  color: #6c757d;
+}
+
+#dashboard2 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+#dashboard2 #search {
+  width: 45%;
+  font-size: 0.4rem;
+  border: none;
+  height: 3vh;
+  border-radius: 0.1rem;
+  padding-left: 0.3rem;
+}
+
+#search:focus {
+  outline: none;
+  border: 4px solid green;
+}
+
+#inputDiv {
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.3rem;
+  width: 90%;
+}
+
+#dashboard2 #date {
+  width: 55%;
+  border: none;
+  font-size: 0.2rem;
+  height: 3vh;
+  border-radius: 0.1rem;
+}
+
+#date:focus {
+  outline: none;
+  border: 4px solid green;
+}
+
+#dashboard2Div {
+  margin-top: 0;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 0.7rem;
+}
+
+#pa2,
+#pa22 {
+  margin: 0;
+}
+
+#pa2 {
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+
+#pa22 {
+  font-size: 0.3rem;
+  color: #6c757d;
+  font-family: sans-serif;
+}
+
+#dashboard3 {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+#cardP {
+  width: 75%;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+#cardP span {
+  color: green;
+  font-family: cursive;
+}
+
+#incomeandexpenseDiv {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#income,
+#expense {
+  width: 45%;
+  background-color: white;
+  height: auto;
+  border-radius: 0.3rem;
+  padding-left: 0.2rem;
+}
+
+#name,
+#name2 {
+  font-size: 0.4rem;
+}
+
+#incomeAmount,
+#transactions {
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+
+#totalDiv {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+#total,
+#total2 {
+  font-size: 0.3rem;
+  color: #6c757d;
+}
+
+#percentage,
+#percentage2 {
+  font-size: 0.3rem;
+  color: #6c757d;
+}
+
+#dashboard3Div {
+  display: flex;
+  flex-direction: row;
+  gap: 0.2rem;
+  justify-content: center;
+  margin: 0;
+  height: 7vh;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+#bell {
+  width: 10%;
+  border: 1px solid black;
+  height: 1vh;
+  background-color: white;
+}
+
+#userName {
+  font-size: 0.4rem;
+  width: 60%;
+  font-weight: bold;
+  text-align: center;
+  color: #6c757d;
+  height: 3vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  overflow: hidden;
+}
+
+#balance {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#totalBalance {
+  font-size: 0.5rem;
+  color: #6c757d;
+  font-weight: bold;
+}
+
+#balanceAmount {
+  font-size: 0.6rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+#transfer button {
+  margin-top: 0;
+  font-size: 0.4rem;
+  display: flex;
+  align-items: center;
+  background-color: green;
+  border: none;
+  color: white;
+  height: 3vh;
+  border-radius: 0.1rem;
+  font-weight: bold;
+  overflow: hidden;
+  justify-content: center;
+}
+
+#transfer {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  gap: 0.1rem;
+  padding: 0.2rem;
+}
+
+#profile {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.Pimg {
+  width: 25%;
+  border-radius: 50%;
+  height: 3vh;
+  object-fit: cover;
+}
+
+#homePic {
+  width: 100%;
+  border-radius: 50%;
+  height: 3vh;
+}
+
+#atmCard {
+  background-color: white;
+  margin: 0.2rem;
+  padding: 0.2rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  align-items: center;
+  border-radius: 0.3rem;
+}
+
+#atmCardButton {
+  width: 80%;
+  height: auto;
+  font-size: 0.3rem;
+  background-color: green;
+  color: white;
+  border-radius: 0.1rem;
+  border: none;
+  height: 3vh;
+}
+
+#atmCard img {
+  width: 93%;
+  height: 10vh;
+}
+
+/* settings page */
+#settings {
+  width: 100%;
+  font-family: sans-serif;
+  background-color: #000;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#userSet {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.4);
+  height: 20vh;
+  padding-left: 1rem;
+  border-radius: 0.3rem;
+}
+
+#userSet img {
+  width: 20%;
+  height: 10vh;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#greet {
+  color: white;
+  font-family: cursive;
+  font-size: 1.5rem;
+}
+
+#userName1 {
+  width: 70%;
+  font-weight: bold;
+  color: white;
+  font-size: 1.4rem;
+}
+
+#settingsCont {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  height: 70vh;
+  padding-top: 0;
+  justify-content: space-between;
+}
+
+#button1,
+#button2,
+#button3 {
+  font-size: 0.8rem;
+  height: 6vh;
+  background-color: green;
+  border: none;
+  color: white;
+  border-radius: 0.2rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.4);
+}
+
+#changes {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#changes a {
+  width: fit-content;
+}
+
+#delete {
+  font-size: 0.7rem;
+  height: auto;
+  color: #6c757d;
+  border: none;
+  font-weight: bold;
+  background-color: none;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.2rem;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.4);
+}
+
+/* change password page */
+#ChangepasswordSection {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+#passwordCHANGE {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#ChangepasswordSection input {
+  height: 8vh;
+  font-size: 0.9rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 0.4rem;
+  border: 4px solid green;
+  outline: none;
+  border-radius: 0.5rem;
+}
+
+#ChangepasswordSection button {
+  height: 8vh;
+  font-size: 0.8rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  border-radius: 0.4rem;
+  border: none;
+}
+
+#oldPassword {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.wrongPasswordMessage {
+  margin-top: 0;
+  padding-top: 0;
+  color: red;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.deleteDiv {
+  width: 70%;
+  height: 17vh;
+  border: 1px solid red;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.deleteDiv h4 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#deleting {
+  margin-top: 1rem;
+  display: none;
+}
+
+#deleting p {
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#deletingButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#deletingButton button {
+  width: 40%;
+  height: 7vh;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  border: none;
+  font-weight: bold;
+}
+
+#yes {
+  background-color: red;
+  color: white;
+}
+
+#no {
+  background-color: green;
+  color: white;
+}
+
+#dasboardRelative {
+  width: 98%;
+  background-color: #000;
+  height: 59vh;
+  border-radius: 0.6rem;
+  position: absolute;
+  top: 22rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+#relativeContents {
+  width: 80%;
+  height: 25vh;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#relativeContentsNote {
+  color: white;
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+#relativeContentsNote span {
+  color: green;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+#relativeContentsItems {
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 0.5rem;
+}
+
+#learnMore {
+  width: 80%;
+  margin-top: 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#learnP1 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#sp {
+  color: green;
+  font-family: cursive;
+}
+
+#learnp2 {
+  font-size: 0.5rem;
+  color: #6c757d;
+}
+
+#learnMoreDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+}
+
+#learnMoreDiv #div1 {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 0.2rem;
+  height: 21vh;
+}
+
+#para1 {
+  font-size: 0.5rem;
+  font-weight: bold;
+  text-align: left;
+  width: 80%;
+  margin-left: 0.5rem;
+}
+
+#para2 {
+  font-size: 0.3rem;
+  width: 80%;
+  color: #6c757d;
+  text-align: left;
+  margin-left: 0.5rem;
+}
+
+#learnMoreDiv button {
+  width: 70%;
+  font-size: 0.4rem;
+  color: white;
+  background-color: #000;
+  border: none;
+  border-radius: 0.1rem;
+  padding: 0.2rem;
+  margin-left: 0.5rem;
+}
+
+#parabtn {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#btn {
+  display: flex;
+}
+
+#phone {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+#phoneNote {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+#phoneImg {
+  width: 50%;
+}
+
+#phoneImg img {
+  width: 100%;
+  display: block;
+}
+
+#phoneNoteP1 {
+  font-size: 0.6rem;
+}
+
+#phoneNoteP1 span {
+  color: green;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+#phoneNoteP2 {
+  font-size: 0.4rem;
+  color: #6c757d;
+  font-family: sans-serif;
+}
+
+#phoneNoteP3 {
+  font-size: 0.5rem;
+  background-color: black;
+  width: 40%;
+  color: white;
+  padding: 0.2rem;
+  text-align: center;
+  border-radius: 0.1rem;
+}
+
+#solution {
+  width: 100%;
+  height: fit-content;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+}
+#solutions {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  justify-content: space-around;
+}
+
+#phoneandNote {
+  width: 60%;
+}
+
+#phoneandNote img {
+  width: 100%;
+  height: 28vh;
+  display: block;
+}
+
+#theNote {
+  width: 40%;
+  color: white;
+}
+
+#theNotep1 {
+  font-size: 0.8rem;
+  font-family: sans-serif;
+}
+
+#theNotep1 span {
+  color: green;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+#theNotep2 {
+  font-size: 0.4rem;
+  font-family: sans-serif;
+  line-height: 0.6rem;
+}
+
+#subHomepage {
+  width: 100%;
+  border-radius: 1px solid red;
+  background-color: #f6f4d2;
+}
+
+#effortlessUnlock {
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 1.8rem;
+  gap: 1.2rem;
+}
+
+#effortless {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  border-radius: 0.3rem;
+  align-items: center;
+  padding-left: 0.7rem;
+  padding-left: 0.7rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+
+#effortless img {
+  width: 50%;
+}
+
+#effortless1 {
+  width: 50%;
+}
+
+#effortless2 {
+  width: 100%;
+  background-color: black;
+  color: white;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 17vh;
+  padding-left: 0.7rem;
+  padding-left: 0.7rem;
+  gap: 1rem;
+}
+
+#effortless1p1 {
+  font: 0.7em sans-serif;
+}
+
+#effortless1p1 span {
+  color: green;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+#effortless1p2 {
+  font: 0.4em sans-serif;
+  color: #6c757d;
+}
+
+#unlockp1 {
+  font-size: 0.7rem;
+  width: 60%;
+  font-family: sans-serif;
+}
+
+#unlockp1 span {
+  color: green;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+#unlockp2 {
+  font-size: 0.6rem;
+  width: 80%;
+  font-family: sans-serif;
+  color: green;
+  margin-left: 0.7rem;
+  vertical-align: middle;
+}
+
+#unlock {
+  width: 30%;
+  background-color: white;
+  text-align: center;
+  border-radius: 0.2rem;
+  font-family: sans-serif;
+  margin-right: 0.7rem;
+}
+
+#steps {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  font-family: sans-serif;
+  margin-top: 1rem;
+}
+
+#stepsp span {
+  font-family: cursive;
+  color: green;
+}
+
+#stepsP {
+  font-size: 0.6rem;
+}
+
+#stepsp p {
+  text-align: center;
+}
+
+#thesteps {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#step1 {
+  width: 30%;
+  background-color: white;
+  border-radius: 0.2rem;
+  padding-left: 0.3rem;
+}
+
+#step1Note {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+#step1Notep1 {
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+
+#step1Notep2 {
+  font-size: 0.3rem;
+  color: #6c757d;
+}
+
+#step1noteBtn {
+  width: 50%;
+  display: flex;
+}
+
+#step1noteBtn p{
+  font-size: 0.5rem;
+  background-color: #f4f9f8;
+  text-align:center;
+  width: 100%;
+  border-radius:0.1rem ;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem
+}
+
+#usersComments {
+  margin: 0 auto;
+  width: 70%;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+#usersComments span{
+  color: green ;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+.container {
+  position: relative; /* this ensures internal boxes which are absolute stays inside the container, and not go over to the top of the page */
+  width: 90%;
+  height: 30vh;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.box {
+  position: absolute; 
+  inset: 0; /* this stacks that boxs on top each other. it is a shorthand for top: 0, left: 0, right: 0, bottom:0. ut forces the boxes to be the same size as the container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  opacity: 0; /* this makes the boxes to be invisibe */
+  transform: scale(0.9); /* this ensures the boxes appear like they are zooming in, occuping 90% of the parent width*/
+  transition: opacity 0.8s ease, transform 0.8s ease; /* this ensures that when the opacity and transform changes from a box to another, it happens smoothly within 0.8s */
+  font-size: 0.7rem;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: 500;
+  font-family: sans-serif;
+  line-height: 1rem;
+}
+
+
+
+.box.active { /* this happens when an active class is added to a box as defined in JS */
+  opacity: 1; /* that box becomes visible */
+  transform: scale(1);  /* the box grows from 90% to 100%
+  z-index: 1; /* this allows the box to be on top of the one fading out */
+}
+
+/* Dots Styling */
+.dots-container {
+  position: absolute; /* this and the bottom px makes the dots container to apper below the container */
+  bottom: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  z-index: 10;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: rgba(0, 0, 0, 0.2); /* the dots color is originally this */
+  border-radius: 50%;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.dot.active {
+  background: #3498db; /* when a dot is active, it changes the background color in 0.3s ease defined above to this */
+  transform: scale(1.2); /* when a dot is active, it grows by 20% in 0.3s ease as defined above */
+}
+
+#footer {
+  width: 100%;
+  height: 40vh;
+  background-color: #000;
+  margin-top: 3rem;
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+#footerNote {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  align-items: center;
+  gap: 2.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#footer1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 33vh;
+}
+
+#footer2 {
+  width: 50%;
+   display: flex;
+   height: 33vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#clavp {
+  font-size: 0.5rem;
+  font-weight: bold;
+}
+
+#clavpimg{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+
+#clavpimg img {
+  height: 3vh;
+}
+
+#clavpNote {
+  font-size: 0.5rem;
+  line-height: 0.9rem;
+}
+
+#bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  font-size: 0.3rem;
+  justify-content: space-between;
+}
+
+#title {
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+
+#title p {
+  width: 30%;
+}
+
+#subtitles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.5rem;
+}
+
+#subtitle1 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#copyright {
+  font-size: 0.3rem;
+}
