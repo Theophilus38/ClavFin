@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClavFin</title>
+    <link rel="stylesheet" href="App.css">
+</head>
+
+<body>
+
+    <div id="historyCard">
+        <div id="historyHeader">
+            <div>
+                <h3>Transaction History</h3>
+                <p class="subtitle">View your  <span>account</span> activity</p>
+            </div>
+
+            <div id="back">
+            <a href="Homepage.html" class="btn-back">Back to Home</a>
+        </div>
+
+        </div>
+
+        <div class="table-container">
+            <table id="historyTable">
+                <thead>
+                    <tr id="headings">
+                        <th>Date & Time</th>
+                        <th>Description</th>
+                        <th>Type</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody id="transactionLog">
+                </tbody>
+            </table>
+        </div>
+
+        <div id="emptyState" class="empty-state hidden">
+            <p>You haven't made any transactions yet.</p>
+        </div>
+
+    </div>
+
+
+    <script src="JS/Transactions.js"></script>
+</body>
+
+</html>

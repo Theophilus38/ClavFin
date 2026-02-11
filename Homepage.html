@@ -25,10 +25,10 @@
       </div>
 
       <div id="pages">
-        <p><a href="Homepage.html">Home</a></p>
-        <p><a href="Features.html">Features</a></p>
-        <p><a href="Pricing.html">Pricing</a></p>
-        <p><a href="Integration.html">Integration</a></p>
+        <p><a href="Homepage.html" class="navigation">Home</a></p>
+        <p><a href="Features.html" class="navigation">Features</a></p>
+        <p><a href="Pricing.html" class="navigation">Pricing</a></p>
+        <p><a href="Integration.html" class="navigation">Integration</a></p>
       </div>
 
       <div id="buttonCont">
@@ -54,10 +54,19 @@
 
 
           <div id="dashboardHambuger">
-            <p id="pa1">Dashboard</p>
+
+            <a href="Homepage.html">
+              <p id="pa1">Dashboard</p>
+            </a>
+
             <p id="pa11">Statistics</p>
-            <p id="pa111">My Wallet</p>
+
+            <a href="Transactions.html">
+              <p id="pa111">Transaction History</p>
+            </a>
+
             <p id="pa111">Cards</p>
+
             <p id="pa1111"><a href="Settings.html">Settings</a></p>
           </div>
         </div>
@@ -100,7 +109,7 @@
 
         <div id="dashboard3">
           <div id="dashboard3Div">
-            <div id="bell"></div>
+            <div id="bell"> <img src="notification.png" alt=""></div>
 
             <div id="profile">
               <div class="Pimg"><img id="homePic" src=""></div>
@@ -113,14 +122,15 @@
             <div id="balanceAmount"></div>
             <div id="transfer">
               <button id="trans">Transfer</button>
-              <button id="recieve">Recieve</button>
             </div>
           </div>
 
           <div id="atmCard">
-            <img src="" alt="">
-            <button id="atmCardButton">Add other Card</button>
+
+            <div id="atmDiv"> 
+            </div>
           </div>
+
         </div>
 
     </section>
@@ -294,13 +304,18 @@
     <div id="cycle-box">
       <div class="slide-track">
         <div class="box">
-          <p>Clavin has transformed how wehandle invoicing. With its easy-to-use interface and detailed financial tracking. We've streamlined our payment process and made smarter decisions to improve cash flow and grow business</p>
+          <p>Clavin has transformed how wehandle invoicing. With its easy-to-use interface and detailed financial
+            tracking. We've streamlined our payment process and made smarter decisions to improve cash flow and grow
+            business</p>
         </div>
         <div class="box">
-          <p>I've used various invoicing tools, but none matches Clavfin. Its customizable financial reportshave been a game-changer, allowing us to present our financials in clear, professional format thats's easy for clients to understand</p>
+          <p>I've used various invoicing tools, but none matches Clavfin. Its customizable financial reportshave been a
+            game-changer, allowing us to present our financials in clear, professional format thats's easy for clients
+            to understand</p>
         </div>
         <div class="box">
-          <p>This is incredibly intuitive. They've made it easy for us to monitor our invoicing and payment processes, helping us adjust our cash flow management for better efficiency</p>
+          <p>This is incredibly intuitive. They've made it easy for us to monitor our invoicing and payment processes,
+            helping us adjust our cash flow management for better efficiency</p>
         </div>
       </div>
 
@@ -391,7 +406,9 @@
 
 
   <script src="JS/Homepage.js" defer></script>
-  <script src="JS/Settings.js"></script>
+  <script src="JS/Settings.js" defer></script>
+  <script src="JS/Transactions.js"></script>
+  <script src="JS/navbar.js"></script>
 </body>
 
 </html>

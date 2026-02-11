@@ -16,6 +16,11 @@ function change() {
   const oldPassword = document.querySelector("#oldPassword").value.trim();
   const newPassword = document.querySelector("#newPassword").value.trim();
 
+  if (newPassword.length < 6) {
+    alert("New Password too short!")
+    return;
+  } 
+
   if (activeStorage.password === oldPassword) {
     //if the password in the info of the active user the active user(the person logged in) is equal to the one inputted in the oldPassword input, then do the below:
     activeStorage.password = newPassword; // updating the password of the person logged in to be the new one inputted

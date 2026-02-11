@@ -6,7 +6,7 @@ function register(event) {
     event.preventDefault()
     const firstName = document.querySelector("#firstName").value.trim();
     const lastName = document.querySelector("#lastName").value.trim();
-     const email = document.querySelector("#email").value.trim();
+     const email = document.querySelector("#email").value.trim().toLowerCase();
 
     // Saving info{object} as "temporaryUser" into localStorage
    const tempUser = { firstName, lastName, email};

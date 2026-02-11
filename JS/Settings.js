@@ -21,7 +21,7 @@ function init() {
   if (activeUser.profilePicture) {
     // activeUser.profilePicture is defined below. This means If the person logged in has a profile picture, then do the below
     // OLD USER: Show their saved picture and set button to "Change"
-    profilePicture.src = activeUser.profilePicture;
+    profilePicture.src = activeUser.profilePicture; // set the profile picture src of the active user to be the url(image) stored at "activeUser.profilePicture = image" below
     updateButton.textContent = "Change Profile Picture";
   } else {
     // NEW USER: if the person logged in has no profile picture:
@@ -39,7 +39,7 @@ photoInput.addEventListener("change", (e) => {
   const file = e.target.files[0]; // once the user picks a file from their ccomputer, the first file they pick is grab and saved as "file"
 
   if (file) {
-    const reader = new FileReader(); // "new FileReader()" is an ib-built JavaScript method that converts files into a string of text that javascript can read. JS can not read a file, like pictures, unless it is converted.
+    const reader = new FileReader(); // "new FileReader()" is an in-built JavaScript method that converts files into a string of text that javascript can read. JS can not read a file, like pictures, unless it is converted.
 
     reader.onload = () => {
       const image = reader.result; // the reader.result is in form of url, it is saved as image
@@ -51,10 +51,10 @@ photoInput.addEventListener("change", (e) => {
 });
 
 function saveAndRefresh(image) {
-  profilePicture.src = image; // the result after reading, which is a url, now becomes the ProfilePicture src
+  profilePicture.src = image; // the result after reading, which is a url, now becomes the ProfilePicture src. (this makes the picture display)
   updateButton.textContent = "Change Profile Picture";
 
-  activeUser.profilePicture = image; //the url for the image gets stored in the local storage for the person that is currently logged in
+  activeUser.profilePicture = image; //the url for the image gets stored in the local storage for the person that is currently logged in(this allows us to store the picture in the local storage)
 
   users = users.map((user) => {
     if (user.email === activeUser.email) {
@@ -104,3 +104,4 @@ yes.addEventListener("click", () => {
         window.location.href = "../signup.html";
     }
 });
+
