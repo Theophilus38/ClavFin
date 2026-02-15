@@ -7,10 +7,20 @@ let userStorage = JSON.parse(localStorage.getItem("users")) || [];
 
 changePassword.addEventListener("click", change);
 
+
 const old = document.querySelector("#oldPassword")
+
+old.addEventListener("input", hideMessage)
+
+const pass = document.querySelector("#firstPassword3")
+const pass2 = document.querySelector("#secondPassword3")
 
  const wrong = document.createElement("p")
  wrong.className = "wrongPasswordMessage"
+
+ function hideMessage () {
+  wrong.style.display = "none"
+ }
 
 function change() {
   const oldPassword = document.querySelector("#oldPassword").value.trim();
@@ -36,13 +46,33 @@ function change() {
 
     localStorage.setItem("users", JSON.stringify(userStorage));
 
-    wrong.style.display = "hidden"
+    wrong.style.display = "none"
 
     alert("Password sucessfully changed");
     window.location.href = "../Homepage.html";
   } else {
     wrong.innerHTML = "Old password not correct"
-    old.insertAdjacentElement("afterend", wrong)
+    pass2.before(wrong)
     wrong.style.display = "block"
   } 
 }
+
+
+const toggles3 = document.querySelectorAll(".toggle3");
+
+toggles3.forEach(toggle3 => {
+    toggle3.addEventListener("click", function () { // Do the below when a toggle(eye slash) is clicked
+
+        const input3 = this.previousElementSibling; // accessing the prevous element of that particular toggle(eye slash) that is clicked, and naming it "input". The previous element here is the password input because it is the element that comes before the eye slash
+
+        if (input3.type === "password") {
+            input3.type = "text";
+            this.classList.remove("fa-eye-slash");
+            this.classList.add("fa-eye");
+        } else {
+            input3.type = "password";
+            this.classList.remove("fa-eye");
+            this.classList.add("fa-eye-slash");
+        }
+    });
+});

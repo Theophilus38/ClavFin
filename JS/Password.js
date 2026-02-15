@@ -3,7 +3,7 @@ const confirmPassword = document.querySelector("#confirm");
 confirmPassword.addEventListener("click", homePage);
 
 function homePage(event) {
-    if(event) event.preventDefault();
+    if (event) event.preventDefault();
 
     const p1 = document.querySelector("#p1").value.trim();
     const p2 = document.querySelector("#p2").value.trim();
@@ -19,11 +19,11 @@ function homePage(event) {
 
     // Getting the temporary user details
     const tempUser = JSON.parse(localStorage.getItem("temporaryUser"));
-    
+
     // If no temp user is found, send the user back to signup
     if (!tempUser) {
         alert("Error: No registration details found. Please sign up again.");
-        window.location.href = "../Signup.html"; 
+        window.location.href = "../Signup.html";
         return;
     }
 
@@ -49,7 +49,7 @@ function homePage(event) {
     // If we found the email in the loop above, stop here.
     if (emailExists) {
         alert("Email already exists");
-        return; 
+        return;
     }
 
     // If it gets beyond the above loop, collect the details of the user and create an object(newUser) which is then set to be pushed into an array of users below:
@@ -67,11 +67,30 @@ function homePage(event) {
     localStorage.setItem("users", JSON.stringify(users));
 
     localStorage.setItem("activeUser", JSON.stringify(newUser))
-    
+
     // Clear the tempUser, since the details of tempUser, which are gottten through the "temporaryUser" in the local storage has been set to "newUser", which in turn has been pushed to "users", which is also set to be "user" in the local storage
-    localStorage.removeItem("temporaryUser"); 
+    localStorage.removeItem("temporaryUser");
 
     // Success
     alert("Account created successfully!");
     window.location.href = "../Homepage.html";
 }
+
+const toggles = document.querySelectorAll(".toggle");
+
+toggles.forEach(toggle => {
+    toggle.addEventListener("click", function () { // Do the below when a toggle(eye slash) is clicked
+
+        const input = this.previousElementSibling; // accessing the prevous element of that particular toggle(eye slash) that is clicked, and naming it "input". The previous element here is the password input because it is the element that comes before the eye slash
+
+        if (input.type === "password") {
+            input.type = "text";
+            this.classList.remove("fa-eye-slash");
+            this.classList.add("fa-eye");
+        } else {
+            input.type = "password";
+            this.classList.remove("fa-eye");
+            this.classList.add("fa-eye-slash");
+        }
+    });
+});

@@ -15,7 +15,7 @@
 
         <div id="transDiv">
             <input type="email" id="amountInput" placeholder="Enter Recipient Email">
-            
+
             <div id="recipentInfo" class="hidden">
                 Sending to: <span id="recipentName"></span>
             </div>
@@ -23,10 +23,17 @@
             <div id="inputAmountDiv">
                 <input type="number" id="theAmount" placeholder="Enter Amount ($)">
             </div>
-            
+
             <button id="send" disabled>Send</button>
         </div>
     </section>
+
+    <div id="back">
+        <a href="Homepage.html" class="btn-back">Back to Home</a>
+    </div>
+
+    <p id="transferNote"><span>Note:</span> Transfers can only be made to local accounts, that is, accounts registered within the
+        same mobile device and browser.</p>
 
     <script src="JS/Transfer.js"></script>
 </body>
