@@ -39,10 +39,10 @@ signOut.addEventListener("click", () => {
 });
 
 yess.addEventListener("click", () => {
+  localStorage.removeItem("activeUser");
   window.location.href = "signup.html";
 });
 
-// If NO → close modal + remove blur
 noo.addEventListener("click", () => {
   modal.style.display = "none";
   home.classList.remove("blur");

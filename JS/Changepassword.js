@@ -10,6 +10,8 @@ changePassword.addEventListener("click", change);
 
 const old = document.querySelector("#oldPassword")
 
+const symbol2 = /[!@#$%^&*(),.?":{}|<>]/;
+
 old.addEventListener("input", hideMessage)
 
 const pass = document.querySelector("#firstPassword3")
@@ -30,6 +32,12 @@ function change() {
     alert("New Password too short!")
     return;
   } 
+
+    if(!symbol2.test(newPassword)) {
+        alert("New password must contain at least one sumbol!");
+        return;
+    }
+
 
   if (activeStorage.password === oldPassword) {
     //if the password in the info of the active user the active user(the person logged in) is equal to the one inputted in the oldPassword input, then do the below:

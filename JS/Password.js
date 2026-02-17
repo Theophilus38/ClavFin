@@ -2,6 +2,8 @@ const confirmPassword = document.querySelector("#confirm");
 
 confirmPassword.addEventListener("click", homePage);
 
+const symbol = /[!@#$%^&*(),.?":{}|<>]/;
+
 function homePage(event) {
     if (event) event.preventDefault();
 
@@ -15,7 +17,13 @@ function homePage(event) {
     } else if (p1.length < 6) {
         alert("Password too short")
         return;
+    } 
+
+    if(!symbol.test(p1) || !symbol.test(p2)) {
+        alert("Password must contain at least one sumbol!");
+        return;
     }
+
 
     // Getting the temporary user details
     const tempUser = JSON.parse(localStorage.getItem("temporaryUser"));

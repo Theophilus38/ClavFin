@@ -89,7 +89,7 @@ body {
 
 #signupButton {
   width: 50%;
-  height: 10vh;
+  height: 7vh;
   margin: 0 auto;
   background-color: green;
   color: white;
@@ -239,8 +239,8 @@ body {
   padding-left: 1rem;
   outline: none;
   border: none;
+  font-size: 1rem;
 }
-
 
 
 /* since browsers like chrome forces an input field that has a saved details to have a particular bg color, we need to ovverride that deafult bg color, if we wish to set our own bg color to saved input fields. Overriding the browser's default autofill background color */
@@ -249,7 +249,7 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus, 
 input:-webkit-autofill:active {
     /* The below creates a giant white shadow inside the input, default color */
-    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    -webkit-box-shadow: 0 0 0 39px white inset !important;
     
     /* This ensures the text stays the color I want (e.g black) */
     -webkit-text-fill-color: black !important;
@@ -2434,4 +2434,414 @@ input {
   background-color: green;
   padding: 0.3rem 0.4rem;
   border-radius: 0.2rem;
+}
+
+/* First page */
+
+#firstPage {
+  width: 100%;
+  display: flex;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: #f6f4d2;
+}
+
+#contact {
+  font-size: 0.7rem;
+  background-color: #000;
+  color: white;
+  padding: 0.4rem 0.5rem; 
+  border-radius: 0.2rem;
+}
+
+#card2Image22 {
+  width: 88%;
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  gap: 0.5rem;
+  font-family: sans-serif;
+  padding: 1rem;
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  justify-content: space-between;
+
+}
+
+
+#card2Foot22 {
+  width: 95%;
+  background-color: #000;
+  height: 37vh;
+  border-radius: 0.5rem;
+  position: relative;
+  bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+
+#imgCont1 {
+  width: 100%;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 40vh;
+}
+
+
+#imgCont2 {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  gap: 0.5rem;
+  height: 40vh;
+  justify-content: flex-end;
+}
+
+#secondimgCont1 {
+  height: 10vh;
+  width: 100%
+}
+
+#firstimgcont1 {
+  width: 100%;
+}
+
+#firstimgCont2 {
+  height: 28vh;
+}
+
+#cont3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 40vh;
+  width: 30%;
+}
+
+#cont1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 40vh;
+  width: 30%;
+}
+
+#imgCont1 {
+  width: 100%;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 40vh;
+}
+
+#firstimgCont3 {
+  height: 9vh;
+  width: 100%;
+}
+
+#secondimgCont3 {
+  height: 19vh;
+  width: 100%;
+}
+
+
+#featuresp22 {
+  font-size: 0.3rem;
+  line-height: 0.5rem;
+}
+
+#values {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -4rem;
+}
+
+#mission {
+  width: 32%;
+  background-color: white;
+  padding-left: 0.3rem;
+  border-radius: 0.3rem;
+  padding-bottom: 0.5rem;
+  
+}
+#missionp1 {
+  font-size: 0.5rem;
+}
+
+#missionp2 {
+  font-size: 0.2rem;
+  width: 70%;
+  line-height: 0.3rem;
+}
+
+#records {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#recordp1 {
+  width: 95%;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+#recordp1 span {
+  color: green;
+  font-family: cursive;
+  font-weight:bold;
+  font-size: 0.8rem;
+}
+
+#theRecords {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 17vh;
+}
+
+#recordImg {
+  width: 48%;
+  height: 100%;
+}
+
+#recordImg img {
+  width: 100%;
+  height: 100%;
+
+}
+
+#recordYears {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#year2021 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000814;
+  color: white;
+  height: 3vh;
+  padding: 0 0.4rem;
+  border-radius: 0.2rem;
+}
+
+#yearss {
+  font-size: 0.3rem;
+}
+
+#yearSign {
+  font-size: 0.4rem;
+}
+
+#year2022 {
+  display: flex;
+  flex-direction: column;
+  background-color: #000814;
+  border-radius: 0.2rem;
+  padding: 0 0.4rem;
+}
+
+#yearDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+}
+
+#yearDivp {
+  font-size: 0.2rem;
+  color: white;
+  width: 70%;
+  padding-top: 0;
+  margin-top: -0.3rem;
+  line-height: 0.3rem;
+}
+
+#yearss2 {
+  font-size: 0.3rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+
+}
+
+#teamMembers {
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: flex-start;
+  height: 40vh;
+  position: relative;
+  margin-top: 1.5rem;
+}
+
+#teamMembersP1 {
+  width: 60%;
+  font-size: 0.8rem;
+}
+
+#teamMembersP1  span{
+  width: 60%;
+  font-size: 0.8rem;
+  color: green;
+  font-family: cursive;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+#teamMembersP2 {
+  width: 60%;
+  font-size: 0.3rem;
+  line-height: 0.5rem;
+}
+
+#membersPics {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  bottom: 4rem;
+}
+
+.member1 {
+  width: 18%;
+  height: 20vh;
+  background: center/cover url("Professional\ Portrait\ of\ a\ Man\ 2.png");
+  border-radius: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 0.2rem;
+}
+
+.member2 {
+  width: 18%;
+  height: 20vh;
+  background: center/cover url("Professional\ Portrait\ of\ a\ Man\ 4.png");
+  border-radius: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 0.2rem;
+}
+
+.member3 {
+  width: 18%;
+  height: 20vh;
+  background: center/cover url("Professional\ Portrait\ of\ a\ Man\ 6.png");
+  border-radius: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 0.2rem;
+}
+
+.member4 {
+  width: 18%;
+  height: 20vh;
+  background:  center/cover url("Professional\ Portrait\ of\ a\ Man\ 8.png");
+  border-radius: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 0.2rem;
+}
+
+.member5 {
+  width: 18%;
+  height: 20vh;
+  background: center/cover url("Professional\ Portrait\ of\ a\ Man\ 10.png");
+  border-radius: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 0.2rem;
+}
+
+.memberName1 {
+  width: 90%;
+  background-color: white;
+  border-radius: 0.1rem;
+  padding-left: 0.2rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.theName {
+  font-size: 0.4rem;
+  color: green;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.thePosition {
+  font-size: 0.3rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#preFoot {
+  width: 100%;
+  margin-top: -4rem;
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  flex-direction: column;
+}
+
+#preFootp {
+  width: 65%;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+#preFootp span {
+  color: green;
+  font-size: 0.9rem;
+  font-family: cursive;
+}
+
+#preFootp2 {
+  font-size: 0.3rem;
+  background-color: #000814;
+  color: white;
+  padding: 0.3rem;
+  border-radius: 0.1rem
 }
