@@ -4,5 +4,5 @@ function protectPage() {
 
   if (!activeUser) {
     window.location.href = "signup.html";
-  }
+  } 
 } 

@@ -34,7 +34,7 @@ function change() {
   } 
 
     if(!symbol2.test(newPassword)) {
-        alert("New password must contain at least one sumbol!");
+        alert("New password must contain at least one symbol!");
         return;
     }
 
