@@ -2880,13 +2880,16 @@ input {
   padding: 1rem;
   position: relative;
   z-index: 1;
-  
   background-color: white;
   justify-content: space-between;
   padding: 0.3rem;
   align-items: center;
   padding-left: 0.8rem;
   margin-top: -1rem
+}
+
+#card2Image3 input {
+  box-sizing: border-box;
 }
 
 #formCont {
@@ -2897,17 +2900,17 @@ input {
 #formCont form {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: 0.2rem;
 }
 
 #formImg {
   width: 48%;
-  height: 27vh;
+  height: 29vh;
 }
 
 #formImg img {
   width: 100%;
-  height: 27vh;
+  height: 29vh;
   border-radius: 0.3rem
 }
 
@@ -2925,6 +2928,9 @@ input {
   padding: 0.1rem;
   outline: none;
   margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
 }
 
 
@@ -2933,7 +2939,7 @@ input {
   font-weight: bold;
 }
 
-#formEmail, #formNumber {
+#formEmail {
   width: 100%;
   height: 1rem;
   border-radius: 0.1rem;
@@ -2941,11 +2947,22 @@ input {
   padding: 0.2rem;
   outline: none;
   margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
 }
 
 #formNumber {
-  padding-left: 55px !important;
-
+  padding-left: 60px !important;
+  width: 100%;
+  height: 1rem;
+  border-radius: 0.1rem;
+  font-size: 0.3rem;
+  outline: none;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
 }
 
 .iti input {
@@ -2953,7 +2970,7 @@ input {
   display: block;
 }
 
-./* Target the flag container specifically */
+/* Target the flag container specifically */
 
 .iti__selected-flag {
   height: 100% !important; /* Forces it to never be taller than the input */
@@ -2963,6 +2980,13 @@ input {
 /* Shrink the actual flag icon if it's still too big */
 .iti__flag {
   transform: scale(0.7); /* Shrinks the flag icon to 70% size */
+}
+
+.iti__flag-container {
+  padding: 0 !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
 }
 
 /* Ensure the arrow stays aligned */
@@ -3008,6 +3032,10 @@ input {
   padding: 0.2rem;
   margin: 0;
   outline: none;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  line-height: 0.5rem;
 }
 
 #formSubmit {
