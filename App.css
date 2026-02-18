@@ -2955,7 +2955,7 @@ input {
 }
 
 #formNumber {
-  padding-left: 53px !important;
+  padding-left: 59px !important;
   width: 100%;
   height: 1.5rem;
   border-radius: 0.1rem;
@@ -2978,7 +2978,7 @@ input {
 }
 
 #formNumber::placeholder {
-  font-size: 0.4rem;
+  font-size: 6px;
   vertical-align: middle;
     line-height: normal !important;
 }
@@ -3015,7 +3015,7 @@ input {
 
 /* Target the country name and the dial code (+1, +44, etc.) */
 .iti__country-list {
-  font-size: 0.5rem !important; /* Adjust this to match your design */
+  font-size: 0.5rem !important; 
 }
 
 /* Reduce the size of the dial code specifically if it's still too big */
@@ -3039,22 +3039,22 @@ input {
 
 /* The text showing the country code inside the input box */
 .iti__selected-dial-code {
-  font-size: 0.3rem !important;
+  font-size: 0.5rem !important;
   margin-left: 4px;
 }
 
 
 #formMessage {
   width: 100%;
-  height: 2.3rem;
+  max-height: 2.5rem;
   font-size: 0.7rem;
   padding: 0.1rem;
   margin: 0;
   outline: none;
   box-sizing: border-box;
   display: flex;
-  align-items: center;
-  line-height: 2.3rem;
+  line-height: 1rem;
+  resize: none;
 }
 
 #formSubmit {
