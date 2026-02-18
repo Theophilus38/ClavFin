@@ -21,6 +21,13 @@ function login() {
 
 }
 
+const session = 
+sessionStorage.setItem("activeUser", "true"); 
+
+if (session) {
+window.location.href = "Homepage.html";
+}
+
 const toggle2 = document.querySelector(".toggle2")
 
 toggle2.addEventListener("click", log)

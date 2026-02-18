@@ -17,10 +17,10 @@ function homePage(event) {
     } else if (p1.length < 6) {
         alert("Password too short")
         return;
-    } 
+    }
 
-    if(!symbol.test(p1) || !symbol.test(p2)) {
-        alert("Password must contain at least one sumbol!");
+    if (!symbol.test(p1) || !symbol.test(p2)) {
+        alert("Password must contain at least one symbol!");
         return;
     }
 
@@ -75,6 +75,9 @@ function homePage(event) {
     localStorage.setItem("users", JSON.stringify(users));
 
     localStorage.setItem("activeUser", JSON.stringify(newUser))
+
+    sessionStorage.setItem("activeUser", JSON.stringify(newUser))
+
 
     // Clear the tempUser, since the details of tempUser, which are gottten through the "temporaryUser" in the local storage has been set to "newUser", which in turn has been pushed to "users", which is also set to be "user" in the local storage
     localStorage.removeItem("temporaryUser");
