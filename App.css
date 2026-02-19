@@ -616,7 +616,7 @@ input:-webkit-autofill:active {
 }
 
 #name,
-#name2 {
+#name22 {
   font-size: 0.4rem;
 }
 
@@ -1109,7 +1109,8 @@ input:-webkit-autofill:active {
 #parabtn {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  justify-content: space-between;
+  height: 19vh;
 }
 
 #btn {
@@ -1262,7 +1263,7 @@ input:-webkit-autofill:active {
   align-items: center;
   height: 17vh;
   padding-left: 0.7rem;
-  padding-left: 0.7rem;
+  padding-right: 0.7rem;
   gap: 1rem;
 }
 
@@ -1295,11 +1296,10 @@ input:-webkit-autofill:active {
 
 #unlockp2 {
   font-size: 0.6rem;
-  width: 80%;
+  width: 100%;
   font-family: sans-serif;
   color: green;
-  margin-left: 0.7rem;
-  vertical-align: middle;
+  text-align: center;
 }
 
 #unlock a {
@@ -1307,11 +1307,12 @@ input:-webkit-autofill:active {
 }
 
 #unlock {
-  width: 30%;
+  width: 40%;
   background-color: white;
   border-radius: 0.2rem;
   font-family: sans-serif;
-  margin-right: 0.7rem;
+  display: flex;
+  justify-content: center;
 }
 
 #steps {
@@ -2315,6 +2316,12 @@ input {
   margin-top: -2rem;
 }
 
+#QandA2 {
+  width: 80%;
+  margin-top: 2rem;
+
+}
+
 #q {
   text-align: center;
   font-size: 0.5rem;
@@ -3161,4 +3168,528 @@ input {
   align-items: center;
   padding-top: 1rem;
   flex-direction: column;
+}
+
+@media (min-width: 321px) and (max-width: 600px) {
+ .navigation{
+  font-size: 0.7rem;
+ }
+ .navButton {
+  font-size: 1rem;
+ }
+
+ #hp1 {
+  font-size: 0.6rem;
+ }
+
+ #hp2 span{
+  font-size: 1.7rem;
+  font-weight: bold;
+ }
+
+ #hp3 {
+  font-size: 0.6rem;
+ }
+
+ #pa1, #pa111, #pa1111 {
+  font-size: 0.8rem;
+ }
+
+ #pa22 {
+  font-size: 0.3rem;
+ }
+
+ #name, #name22 {
+  font-size: 0.8rem;
+  font-weight: bold;
+ }
+
+ #incomeAmount, #transactions {
+  font-size: 0.8rem;
+ }
+
+ #userName {
+  font-size: 0.5rem;
+ }
+
+ #dashboard2 #date {
+  font-size: 0.3rem;
+ }
+
+ #dashboard2 #search {
+  font-size: 0.5rem;
+ }
+
+ #bell {
+  width: 25%;
+  height: 10vh;
+ }
+
+ #totalBalance {
+  font-size: 0.7rem;
+  font-weight: bold;
+ }
+
+ #balanceAmount {
+  font-size: 0.8rem;
+ }
+
+ #trans {
+  font-size: 4rem;
+ }
+
+ #relativeContentsNote p{
+  font-size: 1rem;
+ }
+
+ #relativeContentsNote span {
+  font-size: 1.3rem;
+ }
+
+ #relativeContentsItems {
+  font-size: 0.8rem;
+ }
+
+ #learnMore {
+  margin-top: 15rem;
+}
+
+#learnP1 {
+  font-size: 1.5rem;
+}
+
+#learnP1 span {
+  font-size: 1.8rem;
+}
+
+#learnp2 {
+  font-size: 0.7rem;
+}
+
+#para1 {
+  font-size: 0.7rem;
+}
+
+#para2 {
+  font-size: 0.5rem;
+}
+
+#parabtn {
+  justify-content: space-between;
+}
+
+#btn button {
+  font-size: 0.6rem;
+  border-radius: 0.2rem;
+  font-weight: bold;
+}
+
+#phoneNoteP1 {
+  font-size: 0.8rem;
+}
+
+#phoneNoteP2 {
+  font-size: 0.5rem;
+}
+
+#phoneNoteP3 {
+  font-size: 0.6rem;
+  border-radius: 0.1rem;
+}
+
+#theNotep1 {
+  font-size: 1rem;
+}
+
+#theNotep2 {
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+}
+
+#effortless1p1 {
+  font-size: 1rem;
+}
+
+#effortless1p1 span {
+  font-size: 1.2rem;
+}
+
+#effortless1p2 {
+  font-size: 0.6rem;
+}
+
+#unlockp1 {
+  font-size: 1rem;
+}
+
+#unlockp2 {
+  font-size: 0.8rem;
+}
+
+#stepsp p {
+  font-size: 1.3rem;
+  font-family: sans-serif;
+}
+
+#stepsp span {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+#step1Notep1 {
+  font-size: 0.7rem;
+}
+
+#step1Notep2 {
+  font-size: 0.5rem;
+}
+
+ #step1noteBtn #step1noteBtnp {
+  font-size: 0.7rem;
+  padding: 0.3rem;
+}
+
+#usersComments p{
+  font-size: 1.2rem;
+}
+
+#clavpNote {
+  font-size: 0.6rem;
+}
+
+#bottom p {
+  font-size: 0.4rem;
+}
+
+#title p {
+  font-size: 0.7rem;
+}
+#subtitle1 p {
+  font-size: 0.6rem;
+}
+
+#copyright p {
+  font-size: 0.4rem;
+}
+
+#nump1 {
+  font-size: 0.9rem;
+}
+
+#nump2 {
+  font-size: 0.7rem;
+}
+
+
+/*features page */
+#month {
+  font-size: 0.7rem;
+}
+
+#card2Image {
+  width: 85%;
+}
+
+#top {
+  width: 35%;
+}
+
+#theBuyer, #theMonth {
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+
+#top img {
+  height: 3vh;
+}
+
+#card2Foot {
+  height: 39vh;
+}
+
+#card2FootContent {
+  justify-content: flex-end;
+  padding-bottom: 1rem;
+}
+
+#featuresp1 {
+  font-size: 1rem;
+}
+
+#featuresp1 span {
+  font-size: 1.5rem;
+}
+
+#featuresp2 {
+  font-size: 0.5rem;
+}
+
+#integrate p {
+  width: 40%;
+  font-size: 0.5rem;
+  border-radius: 0.32rem;
+}
+
+#streamline p {
+  width: 40%;
+  font-size: 0.5rem;
+  border-radius: 0.2rem;
+}
+
+#revop1 {
+  font-size: 1rem;
+
+}
+
+#revop1 span {
+  font-size: 1rem;
+}
+
+#revop2 {
+  font-size: 0.5rem;
+}
+
+#approvalsPCont {
+  width: 95%;
+}
+
+#approvalsp1 {
+  font-size: 1rem;
+}
+
+#approvalsp1 span {
+  font-size: 1.3rem;
+}
+
+#approvalsp2 {
+  font-size: 0.6rem;
+}
+
+#approvalsp3 {
+  width: 85%;
+}
+
+#approvalsp4, #approvalsp5 {
+  width: 100%;
+  font-size: 0.5rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  border-radius: 0.4rem;
+}
+
+#intelligentNote {
+  font-size: 1rem;
+}
+
+#intelligentNote span {
+  font-size: 1.1rem;
+}
+
+#managementCont {
+  width: 87%;
+  justify-content: space-between;
+  gap: 0;
+  align-items: center;
+}
+
+#data, #man {
+  width: 47%;
+}
+
+#man{
+  height: 27vh;
+}
+
+#man img {
+  height: 100%;
+}
+
+#employeesNote {
+  font-size: 0.6rem;
+}
+
+#managersNote {
+  font-size: 0.6rem;
+}
+
+#managerNote {
+  font-size: 0.4rem;
+  width: 85%;
+}
+
+#plus, #minus, #plus2, #plus3 {
+  font-size: 0.6rem;
+}
+
+
+/*pricing page */
+#monthly {
+  font-size: 0.8rem;
+}
+
+#anually {
+  font-size: 0.8rem;
+}
+
+#monthly.active {
+  font-size: 1rem;
+}
+
+#anually.active {
+  font-size: 1rem;
+}
+
+#basic {
+  gap: 0.2rem;
+  height: fit-content;
+  padding-bottom: 1rem;
+}
+
+#enterprise {
+  gap: 0.2rem;
+  padding-bottom: 1rem;
+  height: fit-content;
+}
+
+#base {
+  height: 10vh;
+  padding-bottom: 0;
+  margin-top: 0;
+}
+
+#basicp1 {
+  font-size: 0.5rem;
+  padding-bottom: 0;
+}
+
+#basicp2 {
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+#basicp3 {
+  font-size: 0.5rem;
+}
+
+#basicp4 {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+#basicp44 {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+#basicp444 {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+#basicp44 span {
+  font-size: 0.7rem;
+}
+
+#basicp444 span {
+  font-size: 0.7rem;
+}
+
+#basic button {
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  border-radius: 0.3rem;
+}
+
+#enterprise button {
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  border-radius: 0.3rem;
+}
+
+#benefits {
+  font-size: 0.6rem;
+}
+
+#benefit1 {
+  font-size: 0.4rem;
+}
+
+#basicandprice {
+  display: flex;
+  flex-direction: column;
+  height: 11vh;
+  justify-content: space-between;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 1rem;
+}
+
+#card2Foot2 {
+  bottom: 7rem;
+  height: 32vh;
+}
+
+#card2FootContent2 {
+  width: 100%;
+}
+
+#QandA {
+  margin-top: -4rem;
+}
+
+#q {
+  font-size: 1rem;
+}
+
+#q span {
+  font-size: 1.3rem;
+}
+
+#q1, #q2, #q3, #q4, #q5, #q6 {
+  font-size: 0.8rem;
+}
+
+#a1, #a2, #a3, #a4, #a5, #a6 {
+  font-size: 0.7rem;
+}
+
+#qplus1,
+#qplus2,
+#qplus3,
+#qplus4,
+#qplus5,
+#qplus6 {
+  font-size: 0.8rem;
+  border: 1px solid #6c757d;
+  padding: 0.1rem 0.5rem;
+}
+
+/*integration page */
+#intep1 {
+  font-size: 1rem;
+  width: 85%;
+}
+
+#integrating {
+  height: fit-content;
+  align-items: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+#integratingButton {
+  width: 50%;
+  font-size: 0.8rem;
+}
+#integrating img {
+  width: 60%;
+}
+
+#intep1 span {
+  font-size: 1.2rem;
+}
 }
