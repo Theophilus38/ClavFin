@@ -27,9 +27,9 @@ document.addEventListener("DOMContentLoaded", () => { // waiting till the html s
             const row = document.createElement("tr");
 
             row.innerHTML = `
-                <td>${tx.date}</td>
+                <td class="thedate">${tx.date}</td>
 
-                <td><strong>${tx.partner}</strong></td>
+                <td class ="partnerName"><strong>${tx.partner}</strong></td>
 
                 <td>
                     <span class="badge ${isDebit ? 'bg-debit' : 'bg-credit'}">
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => { // waiting till the html s
                     </span>
                 </td>
 
-                <td class="${isDebit ? 'amt-debit' : 'amt-credit'}">
+                <td class="amountttt ${isDebit ? 'amt-debit' : 'amt-credit'}">
                     ${isDebit ? '-' : '+'}$${tx.amount.toLocaleString()}
                 </td>
             `;
