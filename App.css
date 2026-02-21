@@ -570,7 +570,14 @@ h3 {
   font-size: 0.3rem;
   background-color: white;
   padding: 0.2rem;
-  border-radius: 0.3rem
+}
+
+
+#userName3 {
+  font-size: 0.3rem;
+  font-weight: bolder;
+
+  color: #f5f5f5;
 }
 
 #hp2 {
@@ -919,9 +926,9 @@ h3 {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
   border-radius: 0.3rem;
-  height: 12.5vh;
+  height: 9vh;
   padding-top: 0;
 
 }
@@ -940,8 +947,14 @@ h3 {
 #atmDiv {
   width: 100%;
   background: center/cover url("Atm.png");
-  height: 10vh;
-  overflow: hidden
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 0.2rem;
+  padding-bottom: 0.2rem;
+  border-radius: 0.3rem;
 }
 
 /* settings page */
@@ -3147,7 +3160,7 @@ input {
 }
 
 #formNumber {
-  padding-left: 59px !important;
+  padding-left: 59px;
   width: 100%;
   height: 1.5rem;
   border-radius: 0.1rem;
@@ -3164,15 +3177,15 @@ input {
 #name2::placeholder,
 #formEmail::placeholder,
 #formMessage::placeholder {
-  font-size: 0.5rem !important;
+  font-size: 0.5rem ;
   vertical-align: middle;
-  line-height: normal !important;
+  line-height: normal ;
 }
 
 #formNumber::placeholder {
   font-size: 6px;
   vertical-align: middle;
-  line-height: normal !important;
+  line-height: normal;
 }
 
 
@@ -4730,8 +4743,10 @@ input {
   }
 
   #firstimgCont2 {
-    height: 12rem
+    height: 17rem;
+    overflow: hidden;
   }
+
 
   #card2Foot22 {
     height: 15rem;
@@ -4880,28 +4895,49 @@ input {
   #formEmail {
     width: 100%;
     height: 3rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 3rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
 
+  .iti__country-list {
+  font-size: 1.2rem !important;
+}
+
+/* Reduce the size of the dial code specifically if it's still too big */
+.iti__dial-code {
+  font-size: 1rem !important;
+  color: #666;
+}
+
+.iti__selected-dial-code {
+  font-size: 1rem !important;
+  margin-left: 4px;
+}
+
+.iti__arrow {
+  margin-left: 7px !important;
+  transform: scale(2.2);
+}
+
   #name1,
   #name2 {
     height: 3rem;
     border-radius: 0.2rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 3rem;
   }
 
   #formNumber {
     height: 3rem;
-    font-size: 1;
+    font-size: 1.1rem;
     outline: none;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     line-height: 3rem;
+    padding-left: 10rem;
   }
 
   #contactForm input {}
@@ -4946,7 +4982,7 @@ input {
   #formMessage {
     width: 100%;
     height: 10vh;
-    font-size: 1rem;
+    font-size: 1.1rem;
     padding: 0.1rem;
     margin-top: 1rem;
   }
@@ -4963,15 +4999,15 @@ input {
   #name2::placeholder,
   #formEmail::placeholder,
   #formMessage::placeholder {
-    font-size: 1rem !important;
+    font-size: 1rem;
     vertical-align: middle;
-    line-height: normal !important;
+    line-height: normal ;
   }
 
   #formNumber::placeholder {
-    font-size: 0.8rem;
+    font-size: 1rem;
     vertical-align: middle;
-    line-height: normal !important;
+    line-height: normal;
   }
 
 
@@ -5197,7 +5233,9 @@ input {
 
   #historyTable td,
   #historyTable th {
-    padding: 0.5rem 1.6rem;
+    padding: 0.5rem 1.6
+    
+    rem;
   }
 
   #historyTable th {
@@ -5207,4 +5245,2324 @@ input {
   #historyTable td {
     font-size: 1rem;
   }
+}
+
+
+
+@media (min-width: 769px) and (max-width: 900px) {
+  .navigation {
+    font-size: 1.3rem;
+  }
+
+  #navButton {
+    font-size: 1.5rem;
+  }
+
+  #pages {
+    gap: 1.2rem;
+  }
+
+  #hp1 {
+    font-size: 1rem;
+  }
+
+  #hp2 span {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  #hp3 {
+    font-size: 1rem;
+  }
+
+  #pa1,
+  #pa111,
+  #pa1111 {
+    font-size: 1.2rem;
+  }
+
+  #pa22 {
+    font-size: 0.6rem;
+  }
+
+  #name,
+  #name22 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  #incomeAmount,
+  #transactions {
+    font-size: 1.3rem;
+  }
+
+  #dasboardRelative {
+    margin-top: 9rem;
+  }
+
+  #dashboard1p {
+    font-size: 1rem;
+  }
+
+  #search::placeholder {
+    font-size: 1rem;
+  }
+
+  #userName {
+    font-size: 0.9rem;
+  }
+
+
+  #dashboard2 #date {
+    font-size: 0.7rem;
+  }
+
+  #dashboard2 #search {
+    font-size: 0.5rem;
+  }
+
+  #bell {
+    width: 25%;
+    height: 10vh;
+  }
+
+  #totalBalance {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  #balanceAmount {
+    font-size: 1.3rem;
+  }
+
+  #transfer button {
+    font-size: 1rem;
+    border-radius: 0.2rem;
+  }
+
+
+  #relativeContentsNote p {
+    font-size: 1.7rem;
+  }
+
+  #relativeContentsNote span {
+    font-size: 2rem;
+  }
+
+  #relativeContentsItems {
+    font-size: 1rem;
+  }
+
+  #learnMore {
+    margin-top: 25rem;
+  }
+
+  #learnP1 {
+    font-size: 2rem;
+  }
+
+  #learnP1 span {
+    font-size: 2.5rem;
+  }
+
+  #learnp2 {
+    font-size: 1rem;
+  }
+
+  #para1 {
+    font-size: 1rem;
+  }
+
+  #para2 {
+    font-size: 0.7rem;
+  }
+
+  #parabtn {
+    justify-content: space-between;
+  }
+
+  #btn button {
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+  }
+
+  #phoneNoteP1 {
+    font-size: 1.5rem;
+  }
+
+  #phoneNoteP1 span {
+    font-size: 1.8rem;
+  }
+
+  #phoneNoteP2 {
+    font-size: 1rem;
+  }
+
+  #phoneNoteP3 {
+    font-size: 1rem;
+    border-radius: 0.3rem;
+  }
+
+  #theNotep1 {
+    font-size: 1.5rem;
+  }
+
+  #theNotep2 {
+    font-size: 0.9rem;
+    line-height: 1rem;
+  }
+
+  #effortless1p1 {
+    font-size: 1.5rem;
+  }
+
+  #effortless1p1 span {
+    font-size: 1.9rem;
+  }
+
+  #effortless1p2 {
+    font-size: 1rem;
+  }
+
+  #unlockp1 {
+    font-size: 1.5rem;
+  }
+
+  #unlockp1 span {
+    font-size: 1.9rem;
+  }
+
+  #unlockp2 {
+    font-size: 1.2rem;
+  }
+
+  #stepsp p {
+    font-size: 1.9rem;
+    font-family: sans-serif;
+  }
+
+  #stepsp span {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  #step1Notep1 {
+    font-size: 0.9rem;
+  }
+
+  #steps {
+    width: 95%;
+  }
+
+  #step1Notep2 {
+    font-size: 0.7rem;
+  }
+
+  #step1noteBtn #step1noteBtnp {
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+
+  .box p {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+
+  #usersComments p {
+    font-size: 1.7rem;
+  }
+
+
+  #clavpNote {
+    font-size: 1rem;
+    line-height: 1.7rem;
+  }
+
+  #bottom p {
+    font-size: 0.9rem;
+  }
+
+  #title p {
+    font-size: 1.5rem;
+  }
+
+  #subtitle1 p {
+    font-size: 1rem;
+  }
+
+  #copyright p {
+    font-size: 0.9rem;
+  }
+
+  #nump1 {
+    font-size: 0.9rem;
+  }
+
+  #nump2 {
+    font-size: 0.7rem;
+  }
+
+
+  /*features page */
+  #month {
+    font-size: 1rem;
+  }
+
+  #card2Image {
+    width: 85%;
+  }
+
+  #top {
+    width: 35%;
+    height: fit-content
+  }
+
+  #theBuyer,
+  #theMonth {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  #top img {
+    height: 5vh;
+  }
+
+  #ClavFin P {
+    font-size: 1.5rem;
+  }
+
+  #nump1 {
+    font-size: 1.5rem;
+
+  }
+
+  #nump2 {
+    font-size: 1.3rem;
+  }
+
+  #card2Foot {
+    height: 45vh;
+  }
+
+  #card2FootContent {
+    justify-content: flex-end;
+    padding-bottom: 1rem;
+  }
+
+  #featuresp1 {
+    font-size: 2rem;
+    height: 10vh;
+  }
+
+  #featuresp1 span {
+    font-size: 2.5rem;
+  }
+
+  #featuresp2 {
+    font-size: 0.9rem;
+  }
+
+  #integrate p {
+    width: 40%;
+    font-size: 0.8rem;
+    border-radius: 0.3rem;
+  }
+
+  #streamline p {
+    width: 40%;
+    font-size: 01rem;
+    border-radius: 0.2rem;
+  }
+
+
+  #revop1 {
+    font-size: 2rem;
+
+  }
+
+  #revop1 span {
+    font-size: 2rem;
+  }
+
+  #revop2 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  #approvalsPCont {
+    width: 95%;
+  }
+
+  #approvalsp1 {
+    font-size: 1.5rem;
+  }
+
+  #approvalsp1 span {
+    font-size: 2rem;
+  }
+
+  #approvalsp2 {
+    font-size: 1rem;
+  }
+
+  #approvalsp3 {
+    width: 85%;
+  }
+
+  #approvalsp4,
+  #approvalsp5 {
+    width: 100%;
+    font-size: 1rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    border-radius: 0.4rem;
+  }
+
+  #intelligentNote {
+    font-size: 1.5rem;
+  }
+
+  #intelligentNote span {
+    font-size: 2rem;
+  }
+
+  #managementCont {
+    width: 87%;
+    justify-content: space-between;
+    gap: 0;
+    align-items: center;
+  }
+
+  #data,
+  #man {
+    width: 47%;
+  }
+
+  #man {
+    height: 27vh;
+  }
+
+  #man img {
+    height: 100%;
+  }
+
+  #employeesNote,
+  #authoritiesNote,
+  #financeNote {
+    font-size: 1rem;
+  }
+
+  #managersNote {
+    font-size: 1rem;
+  }
+
+  #managerNote {
+    font-size: 0.7rem;
+    width: 85%;
+  }
+
+  #plus,
+  #minus,
+  #plus2,
+  #plus3 {
+    font-size: 1rem;
+  }
+
+
+  /*pricing page */
+  #monthly {
+    font-size: 1rem;
+  }
+
+  #anually {
+    font-size: 1rem;
+  }
+
+  #monthly.active {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+  }
+
+  #anually.active {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+  }
+
+  #basic {
+    gap: 1.5rem;
+    height: fit-content;
+    padding-bottom: 1rem;
+  }
+
+  #enterprise {
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+    height: fit-content;
+  }
+
+  #base {
+    height: 20vh;
+    padding-bottom: 0;
+    margin-top: 0;
+  }
+
+  #basicp1 {
+    font-size: 1rem;
+    padding-bottom: 0;
+  }
+
+  #basicp2 {
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  #basicp3 {
+    font-size: 1rem;
+  }
+
+  #basicp4 {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  #basicp44 {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  #basicp444 {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  #basicp44 span {
+    font-size: 1.2rem;
+  }
+
+  #basicp444 span {
+    font-size: 0.7rem;
+  }
+
+  #basic button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+  }
+
+  #enterprise button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+  }
+
+  #benefits {
+    font-size: 1rem;
+  }
+
+  #benefit1 {
+    font-size: 0.9rem;
+  }
+
+  #basicandprice {
+    display: flex;
+    flex-direction: column;
+    height: 11vh;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+  }
+
+  #card2Image2 {
+    height: fit-content;
+  }
+
+  #card2Foot2 {
+    bottom: 9rem;
+    height: 40vh;
+  }
+
+  #card2FootContent2 {
+    width: 100%;
+  }
+
+  #QandA {
+    margin-top: -4rem;
+  }
+
+  #q {
+    font-size: 1.5rem;
+  }
+
+  #q span {
+    font-size: 2rem;
+  }
+
+  #q1,
+  #q2,
+  #q3,
+  #q4,
+  #q5,
+  #q6 {
+    font-size: 1.5rem;
+  }
+
+  #a1,
+  #a2,
+  #a3,
+  #a4,
+  #a5,
+  #a6 {
+    font-size: 1.3rem;
+  }
+
+  #qplus1,
+  #qplus2,
+  #qplus3,
+  #qplus4,
+  #qplus5,
+  #qplus6 {
+    font-size: 1.2rem;
+    border: 1px solid #6c757d;
+    padding: 0.3rem 0.7rem;
+  }
+
+  #clavP {
+    font-size: 1.5rem;
+  }
+
+  /*integration page */
+  #intep1 {
+    font-size: 1.5rem;
+    width: 85%;
+  }
+
+  #integrating {
+    height: fit-content;
+    align-items: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  #integratingButton {
+    width: 50%;
+    font-size: 1.3rem;
+  }
+
+  #integrating img {
+    width: 60%;
+    height: 20vh;
+  }
+
+  #intep1 span {
+    font-size: 1.8rem;
+  }
+
+  /* welcome page */
+
+  #card2Image22 {
+    padding-top: 0;
+  }
+
+  #firstimgCont2 {
+    height: 20rem;
+    overflow: hidden;
+  }
+
+
+  #card2Foot22 {
+    height: 15rem;
+  }
+
+  #featuresp1 {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  #featuresp22 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 1rem;
+  }
+
+  #values {
+    width: 90vw;
+  }
+
+  #mission {}
+
+  #missionp1 {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 0.4rem;
+  }
+
+  #missionp2 {
+    font-size: 0.7rem;
+    line-height: 1rem;
+    padding-left: 0.4rem;
+    width: 95%;
+  }
+
+  #recordp1 {
+    font-size: 1rem;
+  }
+
+
+  #records {
+    width: 87vw;
+  }
+
+  #recordp1 span {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+
+  #yearss {
+    font-size: 1rem;
+  }
+
+  #yearss2 {
+    font-size: 1rem;
+  }
+
+
+  #yearDiv {
+    height: 4vh;
+  }
+
+  #yearDivp {
+    font-size: 0.6rem;
+    width: 80%;
+    line-height: 0.8rem;
+    margin-top: 0.3rem;
+  }
+
+  #yearSign {
+    font-size: 0.8rem;
+  }
+
+  #teamMembersP1 {
+    font-size: 1.7rem;
+    width: 80vw;
+  }
+
+  #teamMembersP1 span {
+    font-size: 2.2rem;
+  }
+
+  #teamMembersP2 {
+    font-size: 1rem;
+    width: 76vw;
+    line-height: 1.5rem;
+  }
+
+  #teamMembers {
+    height: 30vh;
+  }
+
+  #preFoot {
+    width: 95vw;
+  }
+
+  #preFootp {
+    font-size: 1.5rem;
+  }
+
+  #preFootp span {
+    font-size: 1.8rem;
+  }
+
+  #preFootp2 {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+    border-radius: 0.3rem;
+  }
+
+  #card2Image3 {
+    width: 90%
+  }
+
+  #card2FootContent2p1 {
+    font-size: 1.5rem;
+  }
+
+  #card2FootContent2p1 span {
+    font-size: 1.9rem;
+  }
+
+  #card2FootContent2p2 {
+    font-size: 1.2rem;
+    width: 80%;
+    line-height: 1.5rem;
+  }
+
+  #card2FootContact {
+    height: 55vh;
+    bottom: 5rem;
+  }
+
+  #yearDivpContact {
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+    width: 95%;
+    margin-top: 1rem;
+  }
+
+  #recordYears {
+    gap: 0.5rem;
+  }
+
+  /*contact page */
+
+  #formEmail {
+    width: 100%;
+    height: 3rem;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .iti__country-list {
+  font-size: 1.2rem !important;
+}
+
+/* Reduce the size of the dial code specifically if it's still too big */
+.iti__dial-code {
+  font-size: 1rem !important;
+  color: #666;
+}
+
+.iti__selected-dial-code {
+  font-size: 1rem !important;
+  margin-left: 4px;
+}
+
+.iti__arrow {
+  margin-left: 8px !important;
+  transform: scale(2.5);
+}
+
+  #name1,
+  #name2 {
+    height: 3rem;
+    border-radius: 0.2rem;
+    font-size: 1.3rem;
+    line-height: 3rem;
+  }
+
+  #formNumber {
+    height: 3rem;
+    font-size: 1.3rem;
+    outline: none;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    line-height: 3rem;
+    padding-left: 12rem;
+  }
+
+  #contactForm input {}
+
+  #card2Image3 {
+    width: 90%;
+    height: fit-content;
+    border-radius: 0.7rem;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    gap: 0.5rem;
+    font-family: sans-serif;
+    padding: 1rem;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    justify-content: space-between;
+    padding: 0.3rem;
+    align-items: center;
+    padding-left: 0.8rem;
+    margin-top: -1rem;
+  }
+
+  #formCont {
+    padding-bottom: 1rem;
+  }
+
+  #formImg {
+    height: fit-content;
+  }
+
+  #formImg img {
+    height: 48vh;
+    display: block;
+  }
+
+  #formp1 {
+    font-size: 1.5rem;
+  }
+
+  #formMessage {
+    width: 100%;
+    height: 10vh;
+    font-size: 1.3rem;
+    padding: 0.1rem;
+    margin-top: 1rem;
+  }
+
+
+  #formSubmit {
+    font-size: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  #name1::placeholder,
+  #name2::placeholder,
+  #formEmail::placeholder,
+  #formMessage::placeholder {
+    font-size: 1rem ;
+    vertical-align: middle;
+    line-height: normal ;
+  }
+
+  #formNumber::placeholder {
+    font-size: 1rem;
+    vertical-align: middle;
+    line-height: normal ;
+  }
+
+
+
+  /* sign in page */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    /* The below creates a giant white shadow inside the input, default color */
+    -webkit-box-shadow: 0 0 0 59px white inset !important;
+
+    /* This ensures the text stays the color I want (e.g black) */
+    -webkit-text-fill-color: black !important;
+  }
+
+  #savedEmail {
+    font-size: 1.5rem;
+  }
+
+  #savedPassword {
+    font-size: 1.5rem;
+  }
+
+  #loginButton {
+    font-size: 1.5rem;
+  }
+
+  /* forgot password page */
+
+  #forgotPassword {
+    font-size: 1.5rem;
+  }
+
+  #step1Forgot #email {
+    font-size: 2rem;
+    height: 6rem;
+  }
+
+  #submitEmail {
+    font-size: 1.8rem;
+  }
+
+  #verifyOTP {
+    font-size: 1.8rem;
+  }
+
+  #resendOTP {
+    font-size: 1.8rem;
+  }
+
+  #step2Forgot p {
+    font-size: 1.8rem;
+  }
+
+  .otp {
+    font-size: 2.5rem;
+  }
+
+  .error {
+    font-size: 2rem;
+  }
+
+  #resetPassword {
+    font-size: 1.8rem;
+  }
+
+  #newPasswordd {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .toggle4 {
+    font-size: 1.7rem;
+  }
+
+  .loading {
+    font-size: 1.8rem;
+  }
+
+  .timer {
+    font-size: 1.8rem;
+  }
+
+  #signupButton {
+    font-size: 2rem;
+  }
+
+  #signinParagraph {
+    font-size: 1.5rem;
+  }
+
+  #signinButton {
+    font-size: 1.6rem;
+    padding: 1rem;
+    border-radius: 0.4rem;
+  }
+
+  #signupForm #firstName,
+  #lastName {
+    font-size: 1.5rem;
+  }
+
+  #signupForm #lastName {
+    font-size: 1.5rem;
+  }
+
+  #signupForm #email {
+    font-size: 1.5rem;
+  }
+
+  #firstPassword #p1 {
+    font-size: 1.5rem;
+  }
+
+
+  #secondPassword #p2 {
+    font-size: 1.5rem;
+  }
+
+  #confirm {
+    font-size: 1.8rem;
+  }
+
+  .toggle {
+    font-size: 1.7rem;
+  }
+
+  /* settings page */
+
+  #userSet #profilePicture {
+    height: 12vh;
+  }
+
+  #greet {
+    font-size: 2rem;
+  }
+
+  #userName1 {
+    font-size: 1.5rem;
+  }
+
+  #button1,
+  #button2,
+  #button3 {
+    font-size: 1.7rem;
+    text-align: left;
+  }
+
+  #delete {
+    font-size: 1.7rem;
+  }
+
+
+  #deleting p {
+    font-size: 1.5rem;
+  }
+
+
+  /* transfer page */
+  #transCont h2 {
+    font-size: 2rem;
+  }
+
+  #amountInput {
+    font-size: 1.3rem;
+  }
+
+  #recipentInfo {
+    font-size: 1.5rem;
+  }
+
+  #theAmount {
+    font-size: 1.3rem;
+  }
+
+  #send {
+    font-size: 1.4rem;
+  }
+
+  #back {
+    font-size: 1.5rem;
+  }
+
+  #transferNote {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+
+  #transferNote span {
+    font-size: 1.2rem;
+  }
+
+  /*transaction page */
+
+  #historyyy h3 {
+    font-size: 2rem;
+  }
+
+  #historyyy .subtitle {
+    font-size: 1.3rem;
+  }
+
+  .subtitle span {
+    font-size: 2rem;
+  }
+
+  #headings th {
+    font-size: 1rem;
+  }
+
+  #headings tbody {
+    font-size: 4rem;
+  }
+
+  .empty-state {
+    font-size: 1.3rem;
+  }
+
+
+  #historyTable td,
+  #historyTable th {
+    padding: 0.5rem 1.6
+    
+  
+  }
+
+  #historyTable th {
+    font-size: 1.3rem;
+  }
+
+  #historyTable td {
+    font-size: 1rem;
+  }
+
+
+}
+
+
+@media (min-width: 901px) and (max-width: 1280px) {
+
+  .navigation {
+    font-size: 1.3rem;
+  }
+
+  #navButton {
+    font-size: 1.5rem;
+  }
+
+  #pages {
+    gap: 4rem;
+  }
+
+  #hp1 {
+    font-size: 1.7rem;
+  }
+
+  #hp2 {
+    font-size: 2.5rem;
+  }
+
+
+  #hp2 span {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  #hp3 {
+    font-size: 1.5rem;
+  }
+
+  #pa1,
+  #pa111,
+  #pa1111 {
+    font-size: 1.2rem;
+  }
+
+  #pa22 {
+    font-size: 0.6rem;
+  }
+
+  #name,
+  #name22 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  #incomeAmount,
+  #transactions {
+    font-size: 1.3rem;
+  }
+
+  #dasboardRelative {
+    margin-top: 20rem;
+    height: 72vh;
+  }
+
+  #dashboard1p {
+    font-size: 1rem;
+  }
+
+  #search::placeholder {
+    font-size: 1rem;
+  }
+
+  #userName {
+    font-size: 0.9rem;
+  }
+
+  #dashboard {
+    height: 52vh;
+  }
+
+  .Pimg {
+    border-radius: 0;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+  }
+
+  #dashboard3Div {
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  #homePic {
+    width: 75%;
+    height: 5vh;
+  }
+
+  #profile {
+    height: fit-content;
+    padding: 1rem;
+    align-items: center;
+
+  }
+
+  #userName {
+    font-size: 1rem;
+    padding: 0.5rem;
+    height: fit-content;
+    width: 90%;
+    overflow: hidden;
+  }
+
+
+  #dashboard2 #date {
+    font-size: 1rem;
+  }
+
+  #dashboard2 #search {
+    font-size: 0.5rem;
+  }
+
+  #bell {
+    width: 9%;
+
+  }
+
+  #atmCard {
+    height: 20vh;
+  }
+
+  #atmDiv {
+    height: 100%;
+    border-radius: 0.7rem
+  }
+
+  #userName3 {
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    color: #f5f5f5;
+  }
+
+  #totalBalance {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  #balanceAmount {
+    font-size: 1.3rem;
+  }
+
+  #transfer button {
+    font-size: 1.2rem;
+    border-radius: 0.3rem;
+    padding: 1.5rem;
+  }
+
+  #relativeContentsNote {
+    margin-top: -3rem;
+  }
+
+
+  #relativeContentsNote p {
+    font-size: 1.7rem;
+  }
+
+  #relativeContentsNote span {
+    font-size: 2rem;
+  }
+
+  #relativeContentsItems {
+    font-size: 1.5rem;
+  }
+
+  #learnMore {
+    margin-top: 19rem;
+  }
+
+  #learnP1 {
+    font-size: 2rem;
+  }
+
+  #learnP1 span {
+    font-size: 2.5rem;
+  }
+
+  #learnp2 {
+    font-size: 1rem;
+  }
+
+  #para1 {
+    font-size: 1rem;
+  }
+
+  #para2 {
+    font-size: 0.7rem;
+  }
+
+  #parabtn {
+    justify-content: space-between;
+  }
+
+  #btn button {
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+  }
+
+  #phoneNoteP1 {
+    font-size: 1.5rem;
+  }
+
+  #phoneNoteP1 span {
+    font-size: 1.8rem;
+  }
+
+  #phoneNoteP2 {
+    font-size: 1rem;
+  }
+
+  #phoneNoteP3 {
+    font-size: 1rem;
+    border-radius: 0.3rem;
+  }
+
+  #theNotep1 {
+    font-size: 1.5rem;
+  }
+
+  #theNotep2 {
+    font-size: 0.9rem;
+    line-height: 1rem;
+  }
+
+  #effortless1p1 {
+    font-size: 1.5rem;
+  }
+
+  #effortless1p1 span {
+    font-size: 1.9rem;
+  }
+
+  #effortless1p2 {
+    font-size: 1rem;
+  }
+
+  #unlockp1 {
+    font-size: 1.5rem;
+  }
+
+  #unlockp1 span {
+    font-size: 1.9rem;
+  }
+
+  #unlockp2 {
+    font-size: 1.2rem;
+  }
+
+  #stepsp p {
+    font-size: 1.9rem;
+    font-family: sans-serif;
+  }
+
+  #stepsp span {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  #step1Notep1 {
+    font-size: 0.9rem;
+  }
+
+  #steps {
+    width: 95%;
+  }
+
+  #step1Notep2 {
+    font-size: 0.7rem;
+  }
+
+  #step1noteBtn #step1noteBtnp {
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+
+  .box p {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+
+  #usersComments p {
+    font-size: 1.7rem;
+  }
+
+
+  #clavpNote {
+    font-size: 1rem;
+    line-height: 1.7rem;
+  }
+
+  #bottom p {
+    font-size: 0.9rem;
+  }
+
+  #title p {
+    font-size: 1.5rem;
+  }
+
+  #subtitle1 p {
+    font-size: 1rem;
+  }
+
+  #copyright p {
+    font-size: 0.9rem;
+  }
+
+  #nump1 {
+    font-size: 0.9rem;
+  }
+
+  #nump2 {
+    font-size: 0.7rem;
+  }
+
+
+  /*features page */
+  #month {
+    font-size: 1rem;
+  }
+
+  #card2Image {
+    width: 85%;
+  }
+
+  #top {
+    width: 35%;
+    height: fit-content
+  }
+
+  #theBuyer,
+  #theMonth {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  #top img {
+    height: 5vh;
+  }
+
+  #ClavFin P {
+    font-size: 1.5rem;
+  }
+
+  #nump1 {
+    font-size: 1.5rem;
+
+  }
+
+  #nump2 {
+    font-size: 1.3rem;
+  }
+
+  #card2Foot {
+    height: 45vh;
+  }
+
+  #card2FootContent {
+    justify-content: flex-end;
+    padding-bottom: 1rem;
+  }
+
+  #featuresp1 {
+    font-size: 2rem;
+    height: 10vh;
+  }
+
+  #featuresp1 span {
+    font-size: 2.5rem;
+  }
+
+  #featuresp2 {
+    font-size: 0.9rem;
+  }
+
+  #integrate p {
+    width: 40%;
+    font-size: 0.8rem;
+    border-radius: 0.3rem;
+  }
+
+  #streamline p {
+    width: 40%;
+    font-size: 01rem;
+    border-radius: 0.2rem;
+  }
+
+
+  #revop1 {
+    font-size: 2rem;
+
+  }
+
+  #revop1 span {
+    font-size: 2rem;
+  }
+
+  #revop2 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  #approvalsPCont {
+    width: 95%;
+  }
+
+  #approvalsp1 {
+    font-size: 1.5rem;
+  }
+
+  #approvalsp1 span {
+    font-size: 2rem;
+  }
+
+  #approvalsp2 {
+    font-size: 1rem;
+  }
+
+  #approvalsp3 {
+    width: 85%;
+  }
+
+  #approvalsp4,
+  #approvalsp5 {
+    width: 100%;
+    font-size: 1rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    border-radius: 0.4rem;
+  }
+
+  #intelligentNote {
+    font-size: 1.5rem;
+  }
+
+  #intelligentNote span {
+    font-size: 2rem;
+  }
+
+  #managementCont {
+    width: 87%;
+    justify-content: space-between;
+    gap: 0;
+    align-items: center;
+  }
+
+  #data,
+  #man {
+    width: 47%;
+  }
+
+  #man {
+    height: 27vh;
+  }
+
+  #man img {
+    height: 100%;
+  }
+
+  #employeesNote,
+  #authoritiesNote,
+  #financeNote {
+    font-size: 1rem;
+  }
+
+  #managersNote {
+    font-size: 1rem;
+  }
+
+  #managerNote {
+    font-size: 0.7rem;
+    width: 85%;
+  }
+
+  #plus,
+  #minus,
+  #plus2,
+  #plus3 {
+    font-size: 1rem;
+  }
+
+
+  /*pricing page */
+  #monthly {
+    font-size: 1rem;
+  }
+
+  #anually {
+    font-size: 1rem;
+  }
+
+  #monthly.active {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+  }
+
+  #anually.active {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+  }
+
+  #basic {
+    gap: 1.5rem;
+    height: fit-content;
+    padding-bottom: 1rem;
+  }
+
+  #enterprise {
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+    height: fit-content;
+  }
+
+  #base {
+    height: 20vh;
+    padding-bottom: 0;
+    margin-top: 0;
+  }
+
+  #basicp1 {
+    font-size: 1rem;
+    padding-bottom: 0;
+  }
+
+  #basicp2 {
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  #basicp3 {
+    font-size: 1rem;
+  }
+
+  #basicp4 {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  #basicp44 {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  #basicp444 {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  #basicp44 span {
+    font-size: 1.2rem;
+  }
+
+  #basicp444 span {
+    font-size: 0.7rem;
+  }
+
+  #basic button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+  }
+
+  #enterprise button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+  }
+
+  #benefits {
+    font-size: 1rem;
+  }
+
+  #benefit1 {
+    font-size: 0.9rem;
+  }
+
+  #basicandprice {
+    display: flex;
+    flex-direction: column;
+    height: 11vh;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+  }
+
+  #card2Image2 {
+    height: fit-content;
+  }
+
+  #card2Foot2 {
+    bottom: 9rem;
+    height: 40vh;
+  }
+
+  #card2FootContent2 {
+    width: 100%;
+  }
+
+  #QandA {
+    margin-top: -4rem;
+  }
+
+  #q {
+    font-size: 1.5rem;
+  }
+
+  #q span {
+    font-size: 2rem;
+  }
+
+  #q1,
+  #q2,
+  #q3,
+  #q4,
+  #q5,
+  #q6 {
+    font-size: 1.5rem;
+  }
+
+  #a1,
+  #a2,
+  #a3,
+  #a4,
+  #a5,
+  #a6 {
+    font-size: 1.3rem;
+  }
+
+  #qplus1,
+  #qplus2,
+  #qplus3,
+  #qplus4,
+  #qplus5,
+  #qplus6 {
+    font-size: 1.2rem;
+    border: 1px solid #6c757d;
+    padding: 0.3rem 0.7rem;
+  }
+
+  #clavP {
+    font-size: 1.5rem;
+  }
+
+  /*integration page */
+  #intep1 {
+    font-size: 1.5rem;
+    width: 85%;
+  }
+
+  #integrating {
+    height: fit-content;
+    align-items: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  #integratingButton {
+    width: 50%;
+    font-size: 1.3rem;
+  }
+
+  #integrating img {
+    width: 60%;
+    height: 20vh;
+  }
+
+  #intep1 span {
+    font-size: 1.8rem;
+  }
+
+  /* welcome page */
+
+  #card2Image22 {
+    padding-top: 0;
+  }
+
+  #firstimgCont2 {
+    height: 20rem;
+    overflow: hidden;
+  }
+
+
+  #card2Foot22 {
+    height: 15rem;
+  }
+
+  #featuresp1 {
+    font-size: 1.5rem;
+  }
+
+  #featuresp22 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 1rem;
+  }
+
+  #values {
+    width: 90vw;
+  }
+
+  #mission {}
+
+  #missionp1 {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 0.4rem;
+  }
+
+  #missionp2 {
+    font-size: 0.7rem;
+    line-height: 1rem;
+    padding-left: 0.4rem;
+    width: 95%;
+  }
+
+  #recordp1 {
+    font-size: 1rem;
+  }
+
+
+  #records {
+    width: 87vw;
+  }
+
+  #recordp1 span {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+
+  #yearss {
+    font-size: 1rem;
+  }
+
+  #yearss2 {
+    font-size: 1rem;
+  }
+
+
+  #yearDiv {
+    height: 4vh;
+  }
+
+  #yearDivp {
+    font-size: 0.6rem;
+    width: 80%;
+    line-height: 0.8rem;
+    margin-top: 0.3rem;
+  }
+
+  #yearSign {
+    font-size: 0.8rem;
+  }
+
+  #teamMembersP1 {
+    font-size: 1.7rem;
+    width: 80vw;
+  }
+
+  #teamMembersP1 span {
+    font-size: 2.2rem;
+  }
+
+  #teamMembersP2 {
+    font-size: 1rem;
+    width: 76vw;
+    line-height: 1.5rem;
+  }
+
+  #teamMembers {
+    height: 30vh;
+  }
+
+  #preFoot {
+    width: 95vw;
+  }
+
+  #preFootp {
+    font-size: 1.5rem;
+  }
+
+  #preFootp span {
+    font-size: 1.8rem;
+  }
+
+  #preFootp2 {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+    border-radius: 0.3rem;
+  }
+
+  #card2Image3 {
+    width: 90%
+  }
+
+  #card2FootContent2p1 {
+    font-size: 1.5rem;
+  }
+
+  #card2FootContent2p1 span {
+    font-size: 1.9rem;
+  }
+
+  #card2FootContent2p2 {
+    font-size: 1.2rem;
+    width: 80%;
+    line-height: 1.5rem;
+  }
+
+  #card2FootContact {
+    height: 55vh;
+    bottom: 5rem;
+  }
+
+  #yearDivpContact {
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+    width: 95%;
+    margin-top: 1rem;
+  }
+
+  #recordYears {
+    gap: 0.5rem;
+  }
+
+  /*contact page */
+
+  #formEmail {
+    width: 100%;
+    height: 3rem;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .iti__country-list {
+  font-size: 1.2rem !important;
+}
+
+/* Reduce the size of the dial code specifically if it's still too big */
+.iti__dial-code {
+  font-size: 1rem !important;
+  color: #666;
+}
+
+.iti__selected-dial-code {
+  font-size: 1rem !important;
+  margin-left: 4px;
+}
+
+.iti__arrow {
+  margin-left: 8px !important;
+  transform: scale(2.5);
+}
+
+  #name1,
+  #name2 {
+    height: 3rem;
+    border-radius: 0.2rem;
+    font-size: 1.3rem;
+    line-height: 3rem;
+  }
+
+  #formNumber {
+    height: 3rem;
+    font-size: 1.3rem;
+    outline: none;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    line-height: 3rem;
+    padding-left: 12rem;
+  }
+
+  #contactForm input {}
+
+  #card2Image3 {
+    width: 90%;
+    height: fit-content;
+    border-radius: 0.7rem;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    gap: 0.5rem;
+    font-family: sans-serif;
+    padding: 1rem;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    justify-content: space-between;
+    padding: 0.3rem;
+    align-items: center;
+    padding-left: 0.8rem;
+    margin-top: -1rem;
+  }
+
+  #formCont {
+    padding-bottom: 1rem;
+  }
+
+  #formImg {
+    height: fit-content;
+  }
+
+  #formImg img {
+    height: 48vh;
+    display: block;
+  }
+
+  #formp1 {
+    font-size: 1.5rem;
+  }
+
+  #formMessage {
+    width: 100%;
+    height: 10vh;
+    font-size: 1.3rem;
+    padding: 0.1rem;
+    margin-top: 1rem;
+  }
+
+
+  #formSubmit {
+    font-size: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  #name1::placeholder,
+  #name2::placeholder,
+  #formEmail::placeholder,
+  #formMessage::placeholder {
+    font-size: 1rem ;
+    vertical-align: middle;
+    line-height: normal ;
+  }
+
+  #formNumber::placeholder {
+    font-size: 1rem;
+    vertical-align: middle;
+    line-height: normal ;
+  }
+
+
+
+  /* sign in page */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    /* The below creates a giant white shadow inside the input, default color */
+    -webkit-box-shadow: 0 0 0 59px white inset !important;
+
+    /* This ensures the text stays the color I want (e.g black) */
+    -webkit-text-fill-color: black !important;
+  }
+
+  #savedEmail {
+    font-size: 1.5rem;
+  }
+
+  #savedPassword {
+    font-size: 1.5rem;
+  }
+
+  #loginButton {
+    font-size: 1.5rem;
+  }
+
+  /* forgot password page */
+
+  #forgotPassword {
+    font-size: 1.5rem;
+  }
+
+  #step1Forgot #email {
+    font-size: 2rem;
+    height: 6rem;
+  }
+
+  #submitEmail {
+    font-size: 1.8rem;
+  }
+
+  #verifyOTP {
+    font-size: 1.8rem;
+  }
+
+  #resendOTP {
+    font-size: 1.8rem;
+  }
+
+  #step2Forgot p {
+    font-size: 1.8rem;
+  }
+
+  .otp {
+    font-size: 2.5rem;
+  }
+
+  .error {
+    font-size: 2rem;
+  }
+
+  #resetPassword {
+    font-size: 1.8rem;
+  }
+
+  #newPasswordd {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .toggle4 {
+    font-size: 1.7rem;
+  }
+
+  .loading {
+    font-size: 1.8rem;
+  }
+
+  .timer {
+    font-size: 1.8rem;
+  }
+
+  #signupButton {
+    font-size: 2rem;
+  }
+
+  #signinParagraph {
+    font-size: 1.5rem;
+  }
+
+  #signinButton {
+    font-size: 1.6rem;
+    padding: 1rem;
+    border-radius: 0.4rem;
+  }
+
+  #signupForm #firstName,
+  #lastName {
+    font-size: 1.5rem;
+  }
+
+  #signupForm #lastName {
+    font-size: 1.5rem;
+  }
+
+  #signupForm #email {
+    font-size: 1.5rem;
+  }
+
+  #firstPassword #p1 {
+    font-size: 1.5rem;
+  }
+
+
+  #secondPassword #p2 {
+    font-size: 1.5rem;
+  }
+
+  #confirm {
+    font-size: 1.8rem;
+  }
+
+  .toggle {
+    font-size: 1.7rem;
+  }
+
+  /* settings page */
+
+  #userSet #profilePicture {
+    height: 12vh;
+  }
+
+  #greet {
+    font-size: 2rem;
+  }
+
+  #userName1 {
+    font-size: 1.5rem;
+  }
+
+  #button1,
+  #button2,
+  #button3 {
+    font-size: 1.7rem;
+    text-align: left;
+  }
+
+  #delete {
+    font-size: 1.7rem;
+  }
+
+
+  #deleting p {
+    font-size: 1.5rem;
+  }
+
+
+  /* transfer page */
+  #transCont h2 {
+    font-size: 2rem;
+  }
+
+  #amountInput {
+    font-size: 1.3rem;
+  }
+
+  #recipentInfo {
+    font-size: 1.5rem;
+  }
+
+  #theAmount {
+    font-size: 1.3rem;
+  }
+
+  #send {
+    font-size: 1.4rem;
+  }
+
+  #back {
+    font-size: 1.5rem;
+  }
+
+  #transferNote {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+
+  #transferNote span {
+    font-size: 1.2rem;
+  }
+
+  /*transaction page */
+
+  #historyyy h3 {
+    font-size: 2rem;
+  }
+
+  #historyyy .subtitle {
+    font-size: 1.3rem;
+  }
+
+  .subtitle span {
+    font-size: 2rem;
+  }
+
+  #headings th {
+    font-size: 1rem;
+  }
+
+  #headings tbody {
+    font-size: 4rem;
+  }
+
+  .empty-state {
+    font-size: 1.3rem;
+  }
+
+
+  #historyTable td,
+  #historyTable th {
+    padding: 0.5rem 1.6
+    
+  
+  }
+
+  #historyTable th {
+    font-size: 1.3rem;
+  }
+
+  #historyTable td {
+    font-size: 1rem;
+  }
+
 }
