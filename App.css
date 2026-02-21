@@ -3456,7 +3456,7 @@ input {
   }
 
   #learnMore {
-    margin-top: 15rem;
+    margin-top: 18rem;
   }
 
   #learnP1 {
@@ -3477,6 +3477,18 @@ input {
 
   #para2 {
     font-size: 0.5rem;
+  }
+
+  #homePic {
+    height: 3vh;
+    width: 100%;
+  }
+
+  #userName3 {
+    font-size: 0.5rem;
+    margin-bottom: 0.6rem;
+    margin-left: 0.2rem;
+    font-weight: 900;
   }
 
   #parabtn {
@@ -4181,6 +4193,23 @@ input {
     font-size: 1rem;
   }
 
+  #dashboard {
+    padding-bottom: 1rem;
+  }
+
+  #atmCard {
+    height: 14vh;
+  }
+
+  #atmDiv {
+    height: 100%;
+  }
+
+  #userName3 {
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.9rem;
+  }
   #userName {
     font-size: 0.9rem;
   }
@@ -5300,6 +5329,20 @@ input {
     margin-top: 9rem;
   }
 
+  #atmCard {
+    height: 14vh;
+  }
+
+  #atmDiv {
+    height: 100%;
+  }
+
+  #userName3 {
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
   #dashboard1p {
     font-size: 1rem;
   }
@@ -5353,8 +5396,22 @@ input {
     font-size: 1rem;
   }
 
+  #atmCard {
+    height: 12vh;
+  }
+
+  #atmDiv {
+    height: 100%;
+  }
+
+  #userName3 {
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+    margin-bottom: 1.3rem;
+  }
+
   #learnMore {
-    margin-top: 25rem;
+    margin-top: 27rem;
   }
 
   #learnP1 {
