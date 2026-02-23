@@ -10,6 +10,12 @@ body {
 }
 
 /* index.html */
+
+html, body {
+  background-color: black;
+  margin: 0;
+} /* Crucial to stop white flash during navigation after the printing of "Welcome To ClavFin" to welcome */
+
 #welcomePage {
   width: 100%;
   height: 100vh;
@@ -18,26 +24,27 @@ body {
   align-items: center;
   background-color: black;
   font-family: sans-serif;
-}
+  overflow: hidden;
+  opacity: 0; 
+} /* We tell the page to be invisible the moment it loads. This allows GSAP to "ease" it into view smoothly rather than it just popping up.
+ */
 
 #logo {
   color: green;
   font-size: 2rem;
   font-weight: bold;
+  animation: glow 1s infinite alternate;
 }
 
 @keyframes glow {
-  from {
-    text-shadow: 0 0 7px green;
-  }
+  from { text-shadow: 0 0 7px green; }
+  to { text-shadow: 0 0 20px green; }
+} /* It tells the green text-shadow to grow and shrink, making the logo look like a neon sign. */
 
-  to {
-    text-shadow: 0 0 20px green;
-  }
-}
-
-#logo {
-  animation: glow 1s infinite alternate;
+#logo span {
+  display: inline-block; /* Letters usually sit together like a string. This line tells the browser to treat every letter as a separate "box" so GSAP can move them up and down. */
+  opacity: 0;
+  filter: blur(5px);
 }
 
 .hide {
